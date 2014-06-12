@@ -1,0 +1,4846 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OTA_AirDetailsRS
+ PrimaryLangID="eng"
+ Version="1.0"
+ TransactionIdentifier="0308879b05040a169150901f0805097960903d3c060968a5"
+ FLSNote="This XML adds attributes not in the OTA XML spec.  All such attributes start with FLS"
+ FLSDevice = "ota-xml-expanded"
+ xmlns="http://www.opentravel.org/OTA/2003/05">
+ <Success></Success>
+ <FLSResponseFields 
+   FLSOriginCode="MUC"
+   FLSOriginName="Munich Metro"
+   FLSDestinationCode="LHR"
+   FLSDestinationName="London Heathrow"
+   FLSStartDate="2014-09-25"
+   FLSEndDate="2014-09-25"
+ />
+
+
+ <FlightDetails TotalFlightTime="PT2H00M"
+   TotalMiles="586" 
+   TotalTripTime="PT2H00M"
+   FLSDepartureDateTime="2014-09-25T07:20:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T08:20:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="NonStop"
+   FLSFlightLegs="1"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T07:20:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T08:20:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="2470"
+    JourneyDuration="PT2H00M"
+    SequenceNumber="1"
+    LegDistance="586"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="MUCLHR20140925LH2470"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H05M"
+   TotalMiles="586" 
+   TotalTripTime="PT2H05M"
+   FLSDepartureDateTime="2014-09-25T07:20:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T08:25:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="NonStop"
+   FLSFlightLegs="1"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T07:20:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T08:25:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="947"
+    JourneyDuration="PT2H05M"
+    SequenceNumber="1"
+    LegDistance="586"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="MUCLHR20140925BA947"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="5" FLSDayIndicator="" />
+    <MarketingAirline Code="BA" CodeContext="IATA" CompanyShortName="British Airways" />
+    
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H05M"
+   TotalMiles="586" 
+   TotalTripTime="PT2H05M"
+   FLSDepartureDateTime="2014-09-25T07:20:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T08:25:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="NonStop"
+   FLSFlightLegs="1"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T07:20:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T08:25:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="5037"
+    JourneyDuration="PT2H05M"
+    SequenceNumber="1"
+    LegDistance="586"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="MUCLHR20140925AB5037"
+    FLSUUIDActualFlight="MUCLHR20140925BA947"
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="5" FLSDayIndicator="" />
+    <MarketingAirline Code="AB" CodeContext="IATA" CompanyShortName="Air Berlin" />
+    <OperatingAirline Code="BA" CodeContext="IATA" CompanyShortName="British Airways" FlightNumber="947" />
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H05M"
+   TotalMiles="586" 
+   TotalTripTime="PT2H05M"
+   FLSDepartureDateTime="2014-09-25T07:20:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T08:25:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="NonStop"
+   FLSFlightLegs="1"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T07:20:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T08:25:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="7796"
+    JourneyDuration="PT2H05M"
+    SequenceNumber="1"
+    LegDistance="586"
+    FLSMeals="M"
+    FLSInflightServices=" "
+    FLSUUID="MUCLHR20140925JL7796"
+    FLSUUIDActualFlight="MUCLHR20140925BA947"
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="5" FLSDayIndicator="" />
+    <MarketingAirline Code="JL" CodeContext="IATA" CompanyShortName="Japan Airlines" />
+    <OperatingAirline Code="BA" CodeContext="IATA" CompanyShortName="British Airways" FlightNumber="947" />
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H35M"
+   TotalMiles="589" 
+   TotalTripTime="PT3H40M"
+   FLSDepartureDateTime="2014-09-25T06:45:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T09:25:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T06:45:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T08:05:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="2282"
+    JourneyDuration="PT1H20M"
+    SequenceNumber="1"
+    LegDistance="371"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="MUCBRU20140925LH2282"
+    
+    FLSDOTDisclosure="Owned By:CL"
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="BRU" FLSLocationName="Brussels" Terminal=" " FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="E95" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T09:10:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T09:25:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="5594"
+    JourneyDuration="PT1H15M"
+    SequenceNumber="2"
+    LegDistance="218"
+    FLSMeals="B"
+    FLSInflightServices="  9"
+    FLSUUID="BRULHR20140925LH5594"
+    FLSUUIDActualFlight="BRULHR20140925SN2093"
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="BRU" FLSLocationName="Brussels" Terminal=" " FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    <OperatingAirline Code="SN" CodeContext="IATA" CompanyShortName="Brussels Airlines" FlightNumber="2093" />
+    <Equipment AirEquipType="319" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H35M"
+   TotalMiles="589" 
+   TotalTripTime="PT3H40M"
+   FLSDepartureDateTime="2014-09-25T06:45:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T09:25:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T06:45:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T08:05:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="7050"
+    JourneyDuration="PT1H20M"
+    SequenceNumber="1"
+    LegDistance="371"
+    FLSMeals=""
+    FLSInflightServices="  9"
+    FLSUUID="MUCBRU20140925SN7050"
+    FLSUUIDActualFlight="MUCBRU20140925LH2282"
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="BRU" FLSLocationName="Brussels" Terminal=" " FLSDayIndicator="" />
+    <MarketingAirline Code="SN" CodeContext="IATA" CompanyShortName="Brussels Airlines" />
+    <OperatingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" FlightNumber="2282" />
+    <Equipment AirEquipType="E95" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T09:10:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T09:25:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="2093"
+    JourneyDuration="PT1H15M"
+    SequenceNumber="2"
+    LegDistance="218"
+    FLSMeals="B"
+    FLSInflightServices="  9"
+    FLSUUID="BRULHR20140925SN2093"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="BRU" FLSLocationName="Brussels" Terminal=" " FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="SN" CodeContext="IATA" CompanyShortName="Brussels Airlines" />
+    
+    <Equipment AirEquipType="319" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H45M"
+   TotalMiles="593" 
+   TotalTripTime="PT3H30M"
+   FLSDepartureDateTime="2014-09-25T07:00:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T09:30:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T07:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T08:05:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="93"
+    JourneyDuration="PT1H05M"
+    SequenceNumber="1"
+    LegDistance="186"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCFRA20140925LH93"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T08:50:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T09:30:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="902"
+    JourneyDuration="PT1H40M"
+    SequenceNumber="2"
+    LegDistance="407"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="FRALHR20140925LH902"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H00M"
+   TotalMiles="586" 
+   TotalTripTime="PT2H00M"
+   FLSDepartureDateTime="2014-09-25T09:15:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T10:15:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="NonStop"
+   FLSFlightLegs="1"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T09:15:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T10:15:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="2472"
+    JourneyDuration="PT2H00M"
+    SequenceNumber="1"
+    LegDistance="586"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="MUCLHR20140925LH2472"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT3H00M"
+   TotalMiles="640" 
+   TotalTripTime="PT4H10M"
+   FLSDepartureDateTime="2014-09-25T07:15:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T10:25:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T07:15:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T08:55:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="1123"
+    JourneyDuration="PT1H40M"
+    SequenceNumber="1"
+    LegDistance="424"
+    FLSMeals="S"
+    FLSInflightServices=" "
+    FLSUUID="MUCCDG20140925AF1123"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="CDG" FLSLocationName="Paris Ch. de Gaulle" Terminal="2F" FLSDayIndicator="" />
+    <MarketingAirline Code="AF" CodeContext="IATA" CompanyShortName="Air France" />
+    
+    <Equipment AirEquipType="32A" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T10:05:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T10:25:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="1980"
+    JourneyDuration="PT1H20M"
+    SequenceNumber="2"
+    LegDistance="216"
+    FLSMeals=""
+    FLSInflightServices=" "
+    FLSUUID="CDGLHR20140925AF1980"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="CDG" FLSLocationName="Paris Ch. de Gaulle" Terminal="2E" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="4" FLSDayIndicator="" />
+    <MarketingAirline Code="AF" CodeContext="IATA" CompanyShortName="Air France" />
+    
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H45M"
+   TotalMiles="593" 
+   TotalTripTime="PT3H40M"
+   FLSDepartureDateTime="2014-09-25T08:00:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T10:40:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T08:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T09:05:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="95"
+    JourneyDuration="PT1H05M"
+    SequenceNumber="1"
+    LegDistance="186"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCFRA20140925LH95"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T10:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T10:40:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="904"
+    JourneyDuration="PT1H40M"
+    SequenceNumber="2"
+    LegDistance="407"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="FRALHR20140925LH904"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H45M"
+   TotalMiles="593" 
+   TotalTripTime="PT4H40M"
+   FLSDepartureDateTime="2014-09-25T07:00:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T10:40:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T07:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T08:05:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="93"
+    JourneyDuration="PT1H05M"
+    SequenceNumber="1"
+    LegDistance="186"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCFRA20140925LH93"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T10:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T10:40:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="904"
+    JourneyDuration="PT1H40M"
+    SequenceNumber="2"
+    LegDistance="407"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="FRALHR20140925LH904"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT3H00M"
+   TotalMiles="643" 
+   TotalTripTime="PT4H40M"
+   FLSDepartureDateTime="2014-09-25T07:05:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T10:45:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T07:05:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T08:40:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="1790"
+    JourneyDuration="PT1H35M"
+    SequenceNumber="1"
+    LegDistance="413"
+    FLSMeals="S"
+    FLSInflightServices=" "
+    FLSUUID="MUCAMS20140925KL1790"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="AMS" FLSLocationName="Amsterdam" Terminal=" " FLSDayIndicator="" />
+    <MarketingAirline Code="KL" CodeContext="IATA" CompanyShortName="KLM Royal Dutch Airlines" />
+    
+    <Equipment AirEquipType="73W" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T10:20:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T10:45:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="1009"
+    JourneyDuration="PT1H25M"
+    SequenceNumber="2"
+    LegDistance="230"
+    FLSMeals="S"
+    FLSInflightServices=" "
+    FLSUUID="AMSLHR20140925KL1009"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="AMS" FLSLocationName="Amsterdam" Terminal=" " FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="4" FLSDayIndicator="" />
+    <MarketingAirline Code="KL" CodeContext="IATA" CompanyShortName="KLM Royal Dutch Airlines" />
+    
+    <Equipment AirEquipType="73H" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H45M"
+   TotalMiles="652" 
+   TotalTripTime="PT4H25M"
+   FLSDepartureDateTime="2014-09-25T07:45:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T11:10:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T07:45:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T08:45:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="3619"
+    JourneyDuration="PT1H00M"
+    SequenceNumber="1"
+    LegDistance="162"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCZRH20140925LX3619"
+    FLSUUIDActualFlight="MUCZRH20140925LH2366"
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="ZRH" FLSLocationName="Zurich" Terminal=" " FLSDayIndicator="" />
+    <MarketingAirline Code="LX" CodeContext="IATA" CompanyShortName="SWISS" />
+    <OperatingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" FlightNumber="2366" />
+    <Equipment AirEquipType="E95" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T10:25:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T11:10:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="318"
+    JourneyDuration="PT1H45M"
+    SequenceNumber="2"
+    LegDistance="490"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="ZRHLHR20140925LX318"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="ZRH" FLSLocationName="Zurich" Terminal=" " FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LX" CodeContext="IATA" CompanyShortName="SWISS" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT3H05M"
+   TotalMiles="836" 
+   TotalTripTime="PT4H05M"
+   FLSDepartureDateTime="2014-09-25T08:20:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T11:25:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T08:20:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T09:40:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="6298"
+    JourneyDuration="PT1H20M"
+    SequenceNumber="1"
+    LegDistance="373"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCHAM20140925AB6298"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="HAM" FLSLocationName="Hamburg" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="AB" CodeContext="IATA" CompanyShortName="Air Berlin" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T10:40:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T11:25:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="5031"
+    JourneyDuration="PT1H45M"
+    SequenceNumber="2"
+    LegDistance="463"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="HAMLHR20140925AB5031"
+    FLSUUIDActualFlight="HAMLHR20140925BA965"
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="HAM" FLSLocationName="Hamburg" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="5" FLSDayIndicator="" />
+    <MarketingAirline Code="AB" CodeContext="IATA" CompanyShortName="Air Berlin" />
+    <OperatingAirline Code="BA" CodeContext="IATA" CompanyShortName="British Airways" FlightNumber="965" />
+    <Equipment AirEquipType="319" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H35M"
+   TotalMiles="614" 
+   TotalTripTime="PT3H40M"
+   FLSDepartureDateTime="2014-09-25T08:50:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T11:30:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T08:50:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T10:00:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="2006"
+    JourneyDuration="PT1H10M"
+    SequenceNumber="1"
+    LegDistance="302"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCDUS20140925LH2006"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="DUS" FLSLocationName="Duesseldorf" Terminal=" " FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T11:05:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T11:30:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="3382"
+    JourneyDuration="PT1H25M"
+    SequenceNumber="2"
+    LegDistance="312"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="DUSLHR20140925LH3382"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="DUS" FLSLocationName="Duesseldorf" Terminal=" " FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H05M"
+   TotalMiles="586" 
+   TotalTripTime="PT2H05M"
+   FLSDepartureDateTime="2014-09-25T10:35:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T11:40:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="NonStop"
+   FLSFlightLegs="1"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T10:35:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T11:40:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="949"
+    JourneyDuration="PT2H05M"
+    SequenceNumber="1"
+    LegDistance="586"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="MUCLHR20140925BA949"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="5" FLSDayIndicator="" />
+    <MarketingAirline Code="BA" CodeContext="IATA" CompanyShortName="British Airways" />
+    
+    <Equipment AirEquipType="319" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H05M"
+   TotalMiles="586" 
+   TotalTripTime="PT2H05M"
+   FLSDepartureDateTime="2014-09-25T10:35:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T11:40:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="NonStop"
+   FLSFlightLegs="1"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T10:35:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T11:40:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="5039"
+    JourneyDuration="PT2H05M"
+    SequenceNumber="1"
+    LegDistance="586"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="MUCLHR20140925AB5039"
+    FLSUUIDActualFlight="MUCLHR20140925BA949"
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="5" FLSDayIndicator="" />
+    <MarketingAirline Code="AB" CodeContext="IATA" CompanyShortName="Air Berlin" />
+    <OperatingAirline Code="BA" CodeContext="IATA" CompanyShortName="British Airways" FlightNumber="949" />
+    <Equipment AirEquipType="319" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT3H10M"
+   TotalMiles="887" 
+   TotalTripTime="PT4H40M"
+   FLSDepartureDateTime="2014-09-25T08:20:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T12:00:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T08:20:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T09:30:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="6186"
+    JourneyDuration="PT1H10M"
+    SequenceNumber="1"
+    LegDistance="298"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCTXL20140925AB6186"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="TXL" FLSLocationName="Berlin Tegel" Terminal=" " FLSDayIndicator="" />
+    <MarketingAirline Code="AB" CodeContext="IATA" CompanyShortName="Air Berlin" />
+    
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T11:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T12:00:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="5009"
+    JourneyDuration="PT2H00M"
+    SequenceNumber="2"
+    LegDistance="589"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="TXLLHR20140925AB5009"
+    FLSUUIDActualFlight="TXLLHR20140925BA991"
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="TXL" FLSLocationName="Berlin Tegel" Terminal=" " FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="5" FLSDayIndicator="" />
+    <MarketingAirline Code="AB" CodeContext="IATA" CompanyShortName="Air Berlin" />
+    <OperatingAirline Code="BA" CodeContext="IATA" CompanyShortName="British Airways" FlightNumber="991" />
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H45M"
+   TotalMiles="593" 
+   TotalTripTime="PT3H40M"
+   FLSDepartureDateTime="2014-09-25T10:00:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T12:40:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T10:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T11:05:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="101"
+    JourneyDuration="PT1H05M"
+    SequenceNumber="1"
+    LegDistance="186"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCFRA20140925LH101"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T12:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T12:40:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="906"
+    JourneyDuration="PT1H40M"
+    SequenceNumber="2"
+    LegDistance="407"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="FRALHR20140925LH906"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H45M"
+   TotalMiles="593" 
+   TotalTripTime="PT4H40M"
+   FLSDepartureDateTime="2014-09-25T09:00:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T12:40:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T09:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T10:05:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="99"
+    JourneyDuration="PT1H05M"
+    SequenceNumber="1"
+    LegDistance="186"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCFRA20140925LH99"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="319" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T12:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T12:40:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="906"
+    JourneyDuration="PT1H40M"
+    SequenceNumber="2"
+    LegDistance="407"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="FRALHR20140925LH906"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H50M"
+   TotalMiles="652" 
+   TotalTripTime="PT4H15M"
+   FLSDepartureDateTime="2014-09-25T09:45:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T13:00:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T09:45:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T10:40:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="1101"
+    JourneyDuration="PT0H55M"
+    SequenceNumber="1"
+    LegDistance="162"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCZRH20140925LX1101"
+    
+    FLSDOTDisclosure="Owned By:SWISS EUROPEAN AIR LINES"
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="ZRH" FLSLocationName="Zurich" Terminal=" " FLSDayIndicator="" />
+    <MarketingAirline Code="LX" CodeContext="IATA" CompanyShortName="SWISS" />
+    
+    <Equipment AirEquipType="AR1" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T12:05:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T13:00:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="332"
+    JourneyDuration="PT1H55M"
+    SequenceNumber="2"
+    LegDistance="490"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="ZRHLHR20140925LX332"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="ZRH" FLSLocationName="Zurich" Terminal=" " FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LX" CodeContext="IATA" CompanyShortName="SWISS" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H00M"
+   TotalMiles="586" 
+   TotalTripTime="PT2H00M"
+   FLSDepartureDateTime="2014-09-25T12:05:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T13:05:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="NonStop"
+   FLSFlightLegs="1"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T12:05:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T13:05:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="2474"
+    JourneyDuration="PT2H00M"
+    SequenceNumber="1"
+    LegDistance="586"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="MUCLHR20140925LH2474"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H00M"
+   TotalMiles="586" 
+   TotalTripTime="PT2H00M"
+   FLSDepartureDateTime="2014-09-25T12:05:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T13:05:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="NonStop"
+   FLSFlightLegs="1"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T12:05:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T13:05:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="4500"
+    JourneyDuration="PT2H00M"
+    SequenceNumber="1"
+    LegDistance="586"
+    FLSMeals=""
+    FLSInflightServices="  9"
+    FLSUUID="MUCLHR20140925NZ4500"
+    FLSUUIDActualFlight="MUCLHR20140925LH2474"
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="NZ" CodeContext="IATA" CompanyShortName="Air New Zealand" />
+    <OperatingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" FlightNumber="2474" />
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT3H10M"
+   TotalMiles="887" 
+   TotalTripTime="PT4H15M"
+   FLSDepartureDateTime="2014-09-25T10:20:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T13:35:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T10:20:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T11:30:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="6188"
+    JourneyDuration="PT1H10M"
+    SequenceNumber="1"
+    LegDistance="298"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCTXL20140925AB6188"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="TXL" FLSLocationName="Berlin Tegel" Terminal=" " FLSDayIndicator="" />
+    <MarketingAirline Code="AB" CodeContext="IATA" CompanyShortName="Air Berlin" />
+    
+    <Equipment AirEquipType="738" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T12:35:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T13:35:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="5003"
+    JourneyDuration="PT2H00M"
+    SequenceNumber="2"
+    LegDistance="589"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="TXLLHR20140925AB5003"
+    FLSUUIDActualFlight="TXLLHR20140925BA983"
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="TXL" FLSLocationName="Berlin Tegel" Terminal=" " FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="5" FLSDayIndicator="" />
+    <MarketingAirline Code="AB" CodeContext="IATA" CompanyShortName="Air Berlin" />
+    <OperatingAirline Code="BA" CodeContext="IATA" CompanyShortName="British Airways" FlightNumber="983" />
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H05M"
+   TotalMiles="586" 
+   TotalTripTime="PT2H05M"
+   FLSDepartureDateTime="2014-09-25T12:55:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T14:00:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="NonStop"
+   FLSFlightLegs="1"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T12:55:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T14:00:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="951"
+    JourneyDuration="PT2H05M"
+    SequenceNumber="1"
+    LegDistance="586"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="MUCLHR20140925BA951"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="5" FLSDayIndicator="" />
+    <MarketingAirline Code="BA" CodeContext="IATA" CompanyShortName="British Airways" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H05M"
+   TotalMiles="586" 
+   TotalTripTime="PT2H05M"
+   FLSDepartureDateTime="2014-09-25T12:55:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T14:00:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="NonStop"
+   FLSFlightLegs="1"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T12:55:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T14:00:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="5041"
+    JourneyDuration="PT2H05M"
+    SequenceNumber="1"
+    LegDistance="586"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="MUCLHR20140925AB5041"
+    FLSUUIDActualFlight="MUCLHR20140925BA951"
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="5" FLSDayIndicator="" />
+    <MarketingAirline Code="AB" CodeContext="IATA" CompanyShortName="Air Berlin" />
+    <OperatingAirline Code="BA" CodeContext="IATA" CompanyShortName="British Airways" FlightNumber="951" />
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H45M"
+   TotalMiles="593" 
+   TotalTripTime="PT3H40M"
+   FLSDepartureDateTime="2014-09-25T12:00:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T14:40:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T12:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T13:05:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="105"
+    JourneyDuration="PT1H05M"
+    SequenceNumber="1"
+    LegDistance="186"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCFRA20140925LH105"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="319" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T14:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T14:40:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="908"
+    JourneyDuration="PT1H40M"
+    SequenceNumber="2"
+    LegDistance="407"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="FRALHR20140925LH908"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H45M"
+   TotalMiles="593" 
+   TotalTripTime="PT4H40M"
+   FLSDepartureDateTime="2014-09-25T11:00:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T14:40:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T11:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T12:05:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="103"
+    JourneyDuration="PT1H05M"
+    SequenceNumber="1"
+    LegDistance="186"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCFRA20140925LH103"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T14:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T14:40:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="908"
+    JourneyDuration="PT1H40M"
+    SequenceNumber="2"
+    LegDistance="407"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="FRALHR20140925LH908"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H50M"
+   TotalMiles="643" 
+   TotalTripTime="PT4H10M"
+   FLSDepartureDateTime="2014-09-25T11:50:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T15:00:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T11:50:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T13:20:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="1794"
+    JourneyDuration="PT1H30M"
+    SequenceNumber="1"
+    LegDistance="413"
+    FLSMeals="S"
+    FLSInflightServices=" "
+    FLSUUID="MUCAMS20140925KL1794"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="AMS" FLSLocationName="Amsterdam" Terminal=" " FLSDayIndicator="" />
+    <MarketingAirline Code="KL" CodeContext="IATA" CompanyShortName="KLM Royal Dutch Airlines" />
+    
+    <Equipment AirEquipType="73H" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T14:40:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T15:00:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="1019"
+    JourneyDuration="PT1H20M"
+    SequenceNumber="2"
+    LegDistance="230"
+    FLSMeals="S"
+    FLSInflightServices=" "
+    FLSUUID="AMSLHR20140925KL1019"
+    
+    FLSDOTDisclosure="Owned By:KLM CITYHOPPER"
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="AMS" FLSLocationName="Amsterdam" Terminal=" " FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="4" FLSDayIndicator="" />
+    <MarketingAirline Code="KL" CodeContext="IATA" CompanyShortName="KLM Royal Dutch Airlines" />
+    
+    <Equipment AirEquipType="F70" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT3H10M"
+   TotalMiles="887" 
+   TotalTripTime="PT4H15M"
+   FLSDepartureDateTime="2014-09-25T12:15:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T15:30:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T12:15:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T13:25:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="6190"
+    JourneyDuration="PT1H10M"
+    SequenceNumber="1"
+    LegDistance="298"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCTXL20140925AB6190"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="TXL" FLSLocationName="Berlin Tegel" Terminal=" " FLSDayIndicator="" />
+    <MarketingAirline Code="AB" CodeContext="IATA" CompanyShortName="Air Berlin" />
+    
+    <Equipment AirEquipType="738" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T14:30:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T15:30:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="5011"
+    JourneyDuration="PT2H00M"
+    SequenceNumber="2"
+    LegDistance="589"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="TXLLHR20140925AB5011"
+    FLSUUIDActualFlight="TXLLHR20140925BA993"
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="TXL" FLSLocationName="Berlin Tegel" Terminal=" " FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="5" FLSDayIndicator="" />
+    <MarketingAirline Code="AB" CodeContext="IATA" CompanyShortName="Air Berlin" />
+    <OperatingAirline Code="BA" CodeContext="IATA" CompanyShortName="British Airways" FlightNumber="993" />
+    <Equipment AirEquipType="319" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H00M"
+   TotalMiles="586" 
+   TotalTripTime="PT2H00M"
+   FLSDepartureDateTime="2014-09-25T14:35:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T15:35:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="NonStop"
+   FLSFlightLegs="1"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T14:35:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T15:35:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="2476"
+    JourneyDuration="PT2H00M"
+    SequenceNumber="1"
+    LegDistance="586"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="MUCLHR20140925LH2476"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H45M"
+   TotalMiles="593" 
+   TotalTripTime="PT3H40M"
+   FLSDepartureDateTime="2014-09-25T13:00:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T15:40:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T13:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T14:05:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="107"
+    JourneyDuration="PT1H05M"
+    SequenceNumber="1"
+    LegDistance="186"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCFRA20140925LH107"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T15:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T15:40:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="910"
+    JourneyDuration="PT1H40M"
+    SequenceNumber="2"
+    LegDistance="407"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="FRALHR20140925LH910"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="319" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H45M"
+   TotalMiles="593" 
+   TotalTripTime="PT4H40M"
+   FLSDepartureDateTime="2014-09-25T12:00:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T15:40:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T12:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T13:05:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="105"
+    JourneyDuration="PT1H05M"
+    SequenceNumber="1"
+    LegDistance="186"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCFRA20140925LH105"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="319" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T15:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T15:40:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="910"
+    JourneyDuration="PT1H40M"
+    SequenceNumber="2"
+    LegDistance="407"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="FRALHR20140925LH910"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="319" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT3H00M"
+   TotalMiles="640" 
+   TotalTripTime="PT4H45M"
+   FLSDepartureDateTime="2014-09-25T12:35:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T16:20:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T12:35:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T14:15:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="1723"
+    JourneyDuration="PT1H40M"
+    SequenceNumber="1"
+    LegDistance="424"
+    FLSMeals=""
+    FLSInflightServices=" "
+    FLSUUID="MUCCDG20140925AF1723"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="CDG" FLSLocationName="Paris Ch. de Gaulle" Terminal="2F" FLSDayIndicator="" />
+    <MarketingAirline Code="AF" CodeContext="IATA" CompanyShortName="Air France" />
+    
+    <Equipment AirEquipType="318" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T16:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T16:20:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="1280"
+    JourneyDuration="PT1H20M"
+    SequenceNumber="2"
+    LegDistance="216"
+    FLSMeals=""
+    FLSInflightServices=" "
+    FLSUUID="CDGLHR20140925AF1280"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="CDG" FLSLocationName="Paris Ch. de Gaulle" Terminal="2E" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="4" FLSDayIndicator="" />
+    <MarketingAirline Code="AF" CodeContext="IATA" CompanyShortName="Air France" />
+    
+    <Equipment AirEquipType="319" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H45M"
+   TotalMiles="593" 
+   TotalTripTime="PT3H40M"
+   FLSDepartureDateTime="2014-09-25T14:00:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T16:40:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T14:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T15:05:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="109"
+    JourneyDuration="PT1H05M"
+    SequenceNumber="1"
+    LegDistance="186"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCFRA20140925LH109"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T16:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T16:40:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="914"
+    JourneyDuration="PT1H40M"
+    SequenceNumber="2"
+    LegDistance="407"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="FRALHR20140925LH914"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H45M"
+   TotalMiles="593" 
+   TotalTripTime="PT4H40M"
+   FLSDepartureDateTime="2014-09-25T13:00:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T16:40:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T13:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T14:05:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="107"
+    JourneyDuration="PT1H05M"
+    SequenceNumber="1"
+    LegDistance="186"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCFRA20140925LH107"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T16:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T16:40:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="914"
+    JourneyDuration="PT1H40M"
+    SequenceNumber="2"
+    LegDistance="407"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="FRALHR20140925LH914"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H00M"
+   TotalMiles="586" 
+   TotalTripTime="PT2H00M"
+   FLSDepartureDateTime="2014-09-25T16:00:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T17:00:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="NonStop"
+   FLSFlightLegs="1"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T16:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T17:00:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="2478"
+    JourneyDuration="PT2H00M"
+    SequenceNumber="1"
+    LegDistance="586"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="MUCLHR20140925LH2478"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="319" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H00M"
+   TotalMiles="586" 
+   TotalTripTime="PT2H00M"
+   FLSDepartureDateTime="2014-09-25T16:00:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T17:00:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="NonStop"
+   FLSFlightLegs="1"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T16:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T17:00:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="6145"
+    JourneyDuration="PT2H00M"
+    SequenceNumber="1"
+    LegDistance="586"
+    FLSMeals="S"
+    FLSInflightServices=" "
+    FLSUUID="MUCLHR20140925NH6145"
+    FLSUUIDActualFlight="MUCLHR20140925LH2478"
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="NH" CodeContext="IATA" CompanyShortName="ANA" />
+    <OperatingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" FlightNumber="2478" />
+    <Equipment AirEquipType="319" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT3H40M"
+   TotalMiles="1122" 
+   TotalTripTime="PT4H45M"
+   FLSDepartureDateTime="2014-09-25T13:15:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T17:00:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T13:15:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T14:50:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="1666"
+    JourneyDuration="PT1H35M"
+    SequenceNumber="1"
+    LegDistance="512"
+    FLSMeals="M"
+    FLSInflightServices=" "
+    FLSUUID="MUCCPH20140925SK1666"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="CPH" FLSLocationName="Copenhagen Kastrup" Terminal="3" FLSDayIndicator="" />
+    <MarketingAirline Code="SK" CodeContext="IATA" CompanyShortName="SAS Scandinavian Airlines" />
+    
+    <Equipment AirEquipType="CR9" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T15:55:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T17:00:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="1517"
+    JourneyDuration="PT2H05M"
+    SequenceNumber="2"
+    LegDistance="610"
+    FLSMeals="M"
+    FLSInflightServices=" "
+    FLSUUID="CPHLHR20140925SK1517"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="CPH" FLSLocationName="Copenhagen Kastrup" Terminal="3" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="2" FLSDayIndicator="" />
+    <MarketingAirline Code="SK" CodeContext="IATA" CompanyShortName="SAS Scandinavian Airlines" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H35M"
+   TotalMiles="614" 
+   TotalTripTime="PT3H50M"
+   FLSDepartureDateTime="2014-09-25T14:15:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T17:05:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T14:15:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T15:25:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="2012"
+    JourneyDuration="PT1H10M"
+    SequenceNumber="1"
+    LegDistance="302"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCDUS20140925LH2012"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="DUS" FLSLocationName="Duesseldorf" Terminal=" " FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T16:40:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T17:05:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="3384"
+    JourneyDuration="PT1H25M"
+    SequenceNumber="2"
+    LegDistance="312"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="DUSLHR20140925LH3384"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="DUS" FLSLocationName="Duesseldorf" Terminal=" " FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H40M"
+   TotalMiles="643" 
+   TotalTripTime="PT4H00M"
+   FLSDepartureDateTime="2014-09-25T14:10:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T17:10:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T14:10:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T15:35:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="1796"
+    JourneyDuration="PT1H25M"
+    SequenceNumber="1"
+    LegDistance="413"
+    FLSMeals="S"
+    FLSInflightServices=" "
+    FLSUUID="MUCAMS20140925KL1796"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="AMS" FLSLocationName="Amsterdam" Terminal=" " FLSDayIndicator="" />
+    <MarketingAirline Code="KL" CodeContext="IATA" CompanyShortName="KLM Royal Dutch Airlines" />
+    
+    <Equipment AirEquipType="73W" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T16:55:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T17:10:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="1029"
+    JourneyDuration="PT1H15M"
+    SequenceNumber="2"
+    LegDistance="230"
+    FLSMeals="S"
+    FLSInflightServices=" "
+    FLSUUID="AMSLHR20140925KL1029"
+    
+    FLSDOTDisclosure="Owned By:KLM CITYHOPPER"
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="AMS" FLSLocationName="Amsterdam" Terminal=" " FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="4" FLSDayIndicator="" />
+    <MarketingAirline Code="KL" CodeContext="IATA" CompanyShortName="KLM Royal Dutch Airlines" />
+    
+    <Equipment AirEquipType="F70" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H00M"
+   TotalMiles="586" 
+   TotalTripTime="PT2H00M"
+   FLSDepartureDateTime="2014-09-25T16:25:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T17:25:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="NonStop"
+   FLSFlightLegs="1"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T16:25:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T17:25:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="953"
+    JourneyDuration="PT2H00M"
+    SequenceNumber="1"
+    LegDistance="586"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="MUCLHR20140925BA953"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="5" FLSDayIndicator="" />
+    <MarketingAirline Code="BA" CodeContext="IATA" CompanyShortName="British Airways" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H00M"
+   TotalMiles="586" 
+   TotalTripTime="PT2H00M"
+   FLSDepartureDateTime="2014-09-25T16:25:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T17:25:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="NonStop"
+   FLSFlightLegs="1"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T16:25:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T17:25:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="5043"
+    JourneyDuration="PT2H00M"
+    SequenceNumber="1"
+    LegDistance="586"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="MUCLHR20140925AB5043"
+    FLSUUIDActualFlight="MUCLHR20140925BA953"
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="5" FLSDayIndicator="" />
+    <MarketingAirline Code="AB" CodeContext="IATA" CompanyShortName="Air Berlin" />
+    <OperatingAirline Code="BA" CodeContext="IATA" CompanyShortName="British Airways" FlightNumber="953" />
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H00M"
+   TotalMiles="586" 
+   TotalTripTime="PT2H00M"
+   FLSDepartureDateTime="2014-09-25T16:25:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T17:25:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="NonStop"
+   FLSFlightLegs="1"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T16:25:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T17:25:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="7712"
+    JourneyDuration="PT2H00M"
+    SequenceNumber="1"
+    LegDistance="586"
+    FLSMeals="M"
+    FLSInflightServices=" "
+    FLSUUID="MUCLHR20140925JL7712"
+    FLSUUIDActualFlight="MUCLHR20140925BA953"
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="5" FLSDayIndicator="" />
+    <MarketingAirline Code="JL" CodeContext="IATA" CompanyShortName="Japan Airlines" />
+    <OperatingAirline Code="BA" CodeContext="IATA" CompanyShortName="British Airways" FlightNumber="953" />
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H45M"
+   TotalMiles="643" 
+   TotalTripTime="PT4H25M"
+   FLSDepartureDateTime="2014-09-25T14:10:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T17:35:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T14:10:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T15:35:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="1796"
+    JourneyDuration="PT1H25M"
+    SequenceNumber="1"
+    LegDistance="413"
+    FLSMeals="S"
+    FLSInflightServices=" "
+    FLSUUID="MUCAMS20140925KL1796"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="AMS" FLSLocationName="Amsterdam" Terminal=" " FLSDayIndicator="" />
+    <MarketingAirline Code="KL" CodeContext="IATA" CompanyShortName="KLM Royal Dutch Airlines" />
+    
+    <Equipment AirEquipType="73W" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T17:15:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T17:35:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="1023"
+    JourneyDuration="PT1H20M"
+    SequenceNumber="2"
+    LegDistance="230"
+    FLSMeals="S"
+    FLSInflightServices=" "
+    FLSUUID="AMSLHR20140925KL1023"
+    
+    FLSDOTDisclosure="Owned By:KLM CITYHOPPER"
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="AMS" FLSLocationName="Amsterdam" Terminal=" " FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="4" FLSDayIndicator="" />
+    <MarketingAirline Code="KL" CodeContext="IATA" CompanyShortName="KLM Royal Dutch Airlines" />
+    
+    <Equipment AirEquipType="F70" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H45M"
+   TotalMiles="593" 
+   TotalTripTime="PT3H40M"
+   FLSDepartureDateTime="2014-09-25T15:00:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T17:40:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T15:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T16:05:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="111"
+    JourneyDuration="PT1H05M"
+    SequenceNumber="1"
+    LegDistance="186"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCFRA20140925LH111"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T17:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T17:40:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="916"
+    JourneyDuration="PT1H40M"
+    SequenceNumber="2"
+    LegDistance="407"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="FRALHR20140925LH916"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H45M"
+   TotalMiles="593" 
+   TotalTripTime="PT4H40M"
+   FLSDepartureDateTime="2014-09-25T14:00:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T17:40:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T14:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T15:05:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="109"
+    JourneyDuration="PT1H05M"
+    SequenceNumber="1"
+    LegDistance="186"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCFRA20140925LH109"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T17:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T17:40:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="916"
+    JourneyDuration="PT1H40M"
+    SequenceNumber="2"
+    LegDistance="407"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="FRALHR20140925LH916"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT3H05M"
+   TotalMiles="887" 
+   TotalTripTime="PT3H50M"
+   FLSDepartureDateTime="2014-09-25T14:55:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T17:45:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T14:55:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T16:05:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="6196"
+    JourneyDuration="PT1H10M"
+    SequenceNumber="1"
+    LegDistance="298"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCTXL20140925AB6196"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="TXL" FLSLocationName="Berlin Tegel" Terminal=" " FLSDayIndicator="" />
+    <MarketingAirline Code="AB" CodeContext="IATA" CompanyShortName="Air Berlin" />
+    
+    <Equipment AirEquipType="738" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T16:50:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T17:45:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="5005"
+    JourneyDuration="PT1H55M"
+    SequenceNumber="2"
+    LegDistance="589"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="TXLLHR20140925AB5005"
+    FLSUUIDActualFlight="TXLLHR20140925BA985"
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="TXL" FLSLocationName="Berlin Tegel" Terminal=" " FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="5" FLSDayIndicator="" />
+    <MarketingAirline Code="AB" CodeContext="IATA" CompanyShortName="Air Berlin" />
+    <OperatingAirline Code="BA" CodeContext="IATA" CompanyShortName="British Airways" FlightNumber="985" />
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H45M"
+   TotalMiles="652" 
+   TotalTripTime="PT3H30M"
+   FLSDepartureDateTime="2014-09-25T15:20:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T17:50:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T15:20:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T16:20:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="3623"
+    JourneyDuration="PT1H00M"
+    SequenceNumber="1"
+    LegDistance="162"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCZRH20140925LX3623"
+    FLSUUIDActualFlight="MUCZRH20140925LH2370"
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="ZRH" FLSLocationName="Zurich" Terminal=" " FLSDayIndicator="" />
+    <MarketingAirline Code="LX" CodeContext="IATA" CompanyShortName="SWISS" />
+    <OperatingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" FlightNumber="2370" />
+    <Equipment AirEquipType="E95" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T17:05:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T17:50:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="326"
+    JourneyDuration="PT1H45M"
+    SequenceNumber="2"
+    LegDistance="490"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="ZRHLHR20140925LX326"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="ZRH" FLSLocationName="Zurich" Terminal=" " FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LX" CodeContext="IATA" CompanyShortName="SWISS" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H40M"
+   TotalMiles="643" 
+   TotalTripTime="PT4H40M"
+   FLSDepartureDateTime="2014-09-25T14:10:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T17:50:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T14:10:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T15:35:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="1796"
+    JourneyDuration="PT1H25M"
+    SequenceNumber="1"
+    LegDistance="413"
+    FLSMeals="S"
+    FLSInflightServices=" "
+    FLSUUID="MUCAMS20140925KL1796"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="AMS" FLSLocationName="Amsterdam" Terminal=" " FLSDayIndicator="" />
+    <MarketingAirline Code="KL" CodeContext="IATA" CompanyShortName="KLM Royal Dutch Airlines" />
+    
+    <Equipment AirEquipType="73W" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T17:35:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T17:50:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="1031"
+    JourneyDuration="PT1H15M"
+    SequenceNumber="2"
+    LegDistance="230"
+    FLSMeals="S"
+    FLSInflightServices=" "
+    FLSUUID="AMSLHR20140925KL1031"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="AMS" FLSLocationName="Amsterdam" Terminal=" " FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="4" FLSDayIndicator="" />
+    <MarketingAirline Code="KL" CodeContext="IATA" CompanyShortName="KLM Royal Dutch Airlines" />
+    
+    <Equipment AirEquipType="73W" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H40M"
+   TotalMiles="652" 
+   TotalTripTime="PT4H45M"
+   FLSDepartureDateTime="2014-09-25T14:05:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T17:50:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T14:05:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T15:00:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="1105"
+    JourneyDuration="PT0H55M"
+    SequenceNumber="1"
+    LegDistance="162"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCZRH20140925LX1105"
+    
+    FLSDOTDisclosure="Owned By:SWISS EUROPEAN AIR LINES"
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="ZRH" FLSLocationName="Zurich" Terminal=" " FLSDayIndicator="" />
+    <MarketingAirline Code="LX" CodeContext="IATA" CompanyShortName="SWISS" />
+    
+    <Equipment AirEquipType="AR1" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T17:05:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T17:50:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="326"
+    JourneyDuration="PT1H45M"
+    SequenceNumber="2"
+    LegDistance="490"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="ZRHLHR20140925LX326"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="ZRH" FLSLocationName="Zurich" Terminal=" " FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LX" CodeContext="IATA" CompanyShortName="SWISS" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H55M"
+   TotalMiles="640" 
+   TotalTripTime="PT3H40M"
+   FLSDepartureDateTime="2014-09-25T15:50:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T18:30:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T15:50:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T17:30:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="1623"
+    JourneyDuration="PT1H40M"
+    SequenceNumber="1"
+    LegDistance="424"
+    FLSMeals=""
+    FLSInflightServices=" "
+    FLSUUID="MUCCDG20140925AF1623"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="CDG" FLSLocationName="Paris Ch. de Gaulle" Terminal="2F" FLSDayIndicator="" />
+    <MarketingAirline Code="AF" CodeContext="IATA" CompanyShortName="Air France" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T18:15:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T18:30:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="1080"
+    JourneyDuration="PT1H15M"
+    SequenceNumber="2"
+    LegDistance="216"
+    FLSMeals=""
+    FLSInflightServices=" "
+    FLSUUID="CDGLHR20140925AF1080"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="CDG" FLSLocationName="Paris Ch. de Gaulle" Terminal="2E" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="4" FLSDayIndicator="" />
+    <MarketingAirline Code="AF" CodeContext="IATA" CompanyShortName="Air France" />
+    
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H50M"
+   TotalMiles="773" 
+   TotalTripTime="PT4H30M"
+   FLSDepartureDateTime="2014-09-25T15:00:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T18:30:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T15:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T16:10:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="3687"
+    JourneyDuration="PT1H10M"
+    SequenceNumber="1"
+    LegDistance="304"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="MUCGVA20140925LX3687"
+    FLSUUIDActualFlight="MUCGVA20140925LH2386"
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="GVA" FLSLocationName="Geneva" Terminal="M" FLSDayIndicator="" />
+    <MarketingAirline Code="LX" CodeContext="IATA" CompanyShortName="SWISS" />
+    <OperatingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" FlightNumber="2386" />
+    <Equipment AirEquipType="E95" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T17:50:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T18:30:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="356"
+    JourneyDuration="PT1H40M"
+    SequenceNumber="2"
+    LegDistance="469"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="GVALHR20140925LX356"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="GVA" FLSLocationName="Geneva" Terminal="M" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LX" CodeContext="IATA" CompanyShortName="SWISS" />
+    
+    <Equipment AirEquipType="319" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT3H25M"
+   TotalMiles="1015" 
+   TotalTripTime="PT4H10M"
+   FLSDepartureDateTime="2014-09-25T15:30:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T18:40:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T15:30:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T16:30:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="2330"
+    JourneyDuration="PT1H00M"
+    SequenceNumber="1"
+    LegDistance="221"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCVIE20140925LH2330"
+    
+    FLSDOTDisclosure="Owned By:CL"
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="VIE" FLSLocationName="Vienna" Terminal=" " FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="E95" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T17:15:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T18:40:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="6400"
+    JourneyDuration="PT2H25M"
+    SequenceNumber="2"
+    LegDistance="794"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="VIELHR20140925LH6400"
+    FLSUUIDActualFlight="VIELHR20140925OS455"
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="VIE" FLSLocationName="Vienna" Terminal=" " FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    <OperatingAirline Code="OS" CodeContext="IATA" CompanyShortName="Austrian" FlightNumber="455" />
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT3H25M"
+   TotalMiles="1015" 
+   TotalTripTime="PT4H10M"
+   FLSDepartureDateTime="2014-09-25T15:30:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T18:40:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T15:30:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T16:30:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="7236"
+    JourneyDuration="PT1H00M"
+    SequenceNumber="1"
+    LegDistance="221"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCVIE20140925OS7236"
+    FLSUUIDActualFlight="MUCVIE20140925LH2330"
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="VIE" FLSLocationName="Vienna" Terminal=" " FLSDayIndicator="" />
+    <MarketingAirline Code="OS" CodeContext="IATA" CompanyShortName="Austrian" />
+    <OperatingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" FlightNumber="2330" />
+    <Equipment AirEquipType="E95" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T17:15:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T18:40:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="455"
+    JourneyDuration="PT2H25M"
+    SequenceNumber="2"
+    LegDistance="794"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="VIELHR20140925OS455"
+    
+    FLSDOTDisclosure="Owned By:VO"
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="VIE" FLSLocationName="Vienna" Terminal=" " FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="OS" CodeContext="IATA" CompanyShortName="Austrian" />
+    
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H50M"
+   TotalMiles="593" 
+   TotalTripTime="PT3H45M"
+   FLSDepartureDateTime="2014-09-25T16:00:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T18:45:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T16:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T17:05:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="113"
+    JourneyDuration="PT1H05M"
+    SequenceNumber="1"
+    LegDistance="186"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCFRA20140925LH113"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T18:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T18:45:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="918"
+    JourneyDuration="PT1H45M"
+    SequenceNumber="2"
+    LegDistance="407"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="FRALHR20140925LH918"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H50M"
+   TotalMiles="593" 
+   TotalTripTime="PT4H45M"
+   FLSDepartureDateTime="2014-09-25T15:00:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T18:45:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T15:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T16:05:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="111"
+    JourneyDuration="PT1H05M"
+    SequenceNumber="1"
+    LegDistance="186"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCFRA20140925LH111"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T18:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T18:45:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="918"
+    JourneyDuration="PT1H45M"
+    SequenceNumber="2"
+    LegDistance="407"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="FRALHR20140925LH918"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H35M"
+   TotalMiles="614" 
+   TotalTripTime="PT3H35M"
+   FLSDepartureDateTime="2014-09-25T16:15:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T18:50:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T16:15:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T17:25:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="2016"
+    JourneyDuration="PT1H10M"
+    SequenceNumber="1"
+    LegDistance="302"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCDUS20140925LH2016"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="DUS" FLSLocationName="Duesseldorf" Terminal=" " FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T18:25:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T18:50:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="3386"
+    JourneyDuration="PT1H25M"
+    SequenceNumber="2"
+    LegDistance="312"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="DUSLHR20140925LH3386"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="DUS" FLSLocationName="Duesseldorf" Terminal=" " FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H35M"
+   TotalMiles="614" 
+   TotalTripTime="PT4H35M"
+   FLSDepartureDateTime="2014-09-25T15:15:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T18:50:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T15:15:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T16:25:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="2014"
+    JourneyDuration="PT1H10M"
+    SequenceNumber="1"
+    LegDistance="302"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCDUS20140925LH2014"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="DUS" FLSLocationName="Duesseldorf" Terminal=" " FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T18:25:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T18:50:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="3386"
+    JourneyDuration="PT1H25M"
+    SequenceNumber="2"
+    LegDistance="312"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="DUSLHR20140925LH3386"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="DUS" FLSLocationName="Duesseldorf" Terminal=" " FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H00M"
+   TotalMiles="586" 
+   TotalTripTime="PT2H00M"
+   FLSDepartureDateTime="2014-09-25T18:20:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T19:20:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="NonStop"
+   FLSFlightLegs="1"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T18:20:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T19:20:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="2480"
+    JourneyDuration="PT2H00M"
+    SequenceNumber="1"
+    LegDistance="586"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="MUCLHR20140925LH2480"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H00M"
+   TotalMiles="586" 
+   TotalTripTime="PT2H00M"
+   FLSDepartureDateTime="2014-09-25T18:20:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T19:20:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="NonStop"
+   FLSFlightLegs="1"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T18:20:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T19:20:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="6143"
+    JourneyDuration="PT2H00M"
+    SequenceNumber="1"
+    LegDistance="586"
+    FLSMeals="S"
+    FLSInflightServices=" "
+    FLSUUID="MUCLHR20140925NH6143"
+    FLSUUIDActualFlight="MUCLHR20140925LH2480"
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="NH" CodeContext="IATA" CompanyShortName="ANA" />
+    <OperatingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" FlightNumber="2480" />
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H55M"
+   TotalMiles="640" 
+   TotalTripTime="PT4H30M"
+   FLSDepartureDateTime="2014-09-25T15:50:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T19:20:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T15:50:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T17:30:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="1623"
+    JourneyDuration="PT1H40M"
+    SequenceNumber="1"
+    LegDistance="424"
+    FLSMeals=""
+    FLSInflightServices=" "
+    FLSUUID="MUCCDG20140925AF1623"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="CDG" FLSLocationName="Paris Ch. de Gaulle" Terminal="2F" FLSDayIndicator="" />
+    <MarketingAirline Code="AF" CodeContext="IATA" CompanyShortName="Air France" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T19:05:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T19:20:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="1180"
+    JourneyDuration="PT1H15M"
+    SequenceNumber="2"
+    LegDistance="216"
+    FLSMeals=""
+    FLSInflightServices=" "
+    FLSUUID="CDGLHR20140925AF1180"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="CDG" FLSLocationName="Paris Ch. de Gaulle" Terminal="2E" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="4" FLSDayIndicator="" />
+    <MarketingAirline Code="AF" CodeContext="IATA" CompanyShortName="Air France" />
+    
+    <Equipment AirEquipType="319" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H45M"
+   TotalMiles="652" 
+   TotalTripTime="PT3H20M"
+   FLSDepartureDateTime="2014-09-25T17:05:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T19:25:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T17:05:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T18:00:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="1109"
+    JourneyDuration="PT0H55M"
+    SequenceNumber="1"
+    LegDistance="162"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCZRH20140925LX1109"
+    
+    FLSDOTDisclosure="Owned By:SWISS EUROPEAN AIR LINES"
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="ZRH" FLSLocationName="Zurich" Terminal=" " FLSDayIndicator="" />
+    <MarketingAirline Code="LX" CodeContext="IATA" CompanyShortName="SWISS" />
+    
+    <Equipment AirEquipType="AR1" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T18:35:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T19:25:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="338"
+    JourneyDuration="PT1H50M"
+    SequenceNumber="2"
+    LegDistance="490"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="ZRHLHR20140925LX338"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="ZRH" FLSLocationName="Zurich" Terminal=" " FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LX" CodeContext="IATA" CompanyShortName="SWISS" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT3H00M"
+   TotalMiles="836" 
+   TotalTripTime="PT4H05M"
+   FLSDepartureDateTime="2014-09-25T16:35:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T19:40:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T16:35:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T17:55:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="6306"
+    JourneyDuration="PT1H20M"
+    SequenceNumber="1"
+    LegDistance="373"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCHAM20140925AB6306"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="HAM" FLSLocationName="Hamburg" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="AB" CodeContext="IATA" CompanyShortName="Air Berlin" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T19:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T19:40:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="5033"
+    JourneyDuration="PT1H40M"
+    SequenceNumber="2"
+    LegDistance="463"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="HAMLHR20140925AB5033"
+    FLSUUIDActualFlight="HAMLHR20140925BA967"
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="HAM" FLSLocationName="Hamburg" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="5" FLSDayIndicator="" />
+    <MarketingAirline Code="AB" CodeContext="IATA" CompanyShortName="Air Berlin" />
+    <OperatingAirline Code="BA" CodeContext="IATA" CompanyShortName="British Airways" FlightNumber="967" />
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H00M"
+   TotalMiles="586" 
+   TotalTripTime="PT2H00M"
+   FLSDepartureDateTime="2014-09-25T18:50:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T19:50:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="NonStop"
+   FLSFlightLegs="1"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T18:50:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T19:50:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="961"
+    JourneyDuration="PT2H00M"
+    SequenceNumber="1"
+    LegDistance="586"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="MUCLHR20140925BA961"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="5" FLSDayIndicator="" />
+    <MarketingAirline Code="BA" CodeContext="IATA" CompanyShortName="British Airways" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H00M"
+   TotalMiles="586" 
+   TotalTripTime="PT2H00M"
+   FLSDepartureDateTime="2014-09-25T18:50:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T19:50:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="NonStop"
+   FLSFlightLegs="1"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T18:50:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T19:50:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="5049"
+    JourneyDuration="PT2H00M"
+    SequenceNumber="1"
+    LegDistance="586"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="MUCLHR20140925AB5049"
+    FLSUUIDActualFlight="MUCLHR20140925BA961"
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="5" FLSDayIndicator="" />
+    <MarketingAirline Code="AB" CodeContext="IATA" CompanyShortName="Air Berlin" />
+    <OperatingAirline Code="BA" CodeContext="IATA" CompanyShortName="British Airways" FlightNumber="961" />
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT3H10M"
+   TotalMiles="887" 
+   TotalTripTime="PT3H55M"
+   FLSDepartureDateTime="2014-09-25T17:15:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T20:10:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T17:15:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T18:30:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="6208"
+    JourneyDuration="PT1H15M"
+    SequenceNumber="1"
+    LegDistance="298"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCTXL20140925AB6208"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="TXL" FLSLocationName="Berlin Tegel" Terminal=" " FLSDayIndicator="" />
+    <MarketingAirline Code="AB" CodeContext="IATA" CompanyShortName="Air Berlin" />
+    
+    <Equipment AirEquipType="738" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T19:15:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T20:10:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="5007"
+    JourneyDuration="PT1H55M"
+    SequenceNumber="2"
+    LegDistance="589"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="TXLLHR20140925AB5007"
+    FLSUUIDActualFlight="TXLLHR20140925BA987"
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="TXL" FLSLocationName="Berlin Tegel" Terminal=" " FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="5" FLSDayIndicator="" />
+    <MarketingAirline Code="AB" CodeContext="IATA" CompanyShortName="Air Berlin" />
+    <OperatingAirline Code="BA" CodeContext="IATA" CompanyShortName="British Airways" FlightNumber="987" />
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT3H05M"
+   TotalMiles="887" 
+   TotalTripTime="PT4H25M"
+   FLSDepartureDateTime="2014-09-25T16:45:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T20:10:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T16:45:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T17:55:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="6200"
+    JourneyDuration="PT1H10M"
+    SequenceNumber="1"
+    LegDistance="298"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCTXL20140925AB6200"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="TXL" FLSLocationName="Berlin Tegel" Terminal=" " FLSDayIndicator="" />
+    <MarketingAirline Code="AB" CodeContext="IATA" CompanyShortName="Air Berlin" />
+    
+    <Equipment AirEquipType="738" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T19:15:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T20:10:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="5007"
+    JourneyDuration="PT1H55M"
+    SequenceNumber="2"
+    LegDistance="589"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="TXLLHR20140925AB5007"
+    FLSUUIDActualFlight="TXLLHR20140925BA987"
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="TXL" FLSLocationName="Berlin Tegel" Terminal=" " FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="5" FLSDayIndicator="" />
+    <MarketingAirline Code="AB" CodeContext="IATA" CompanyShortName="Air Berlin" />
+    <OperatingAirline Code="BA" CodeContext="IATA" CompanyShortName="British Airways" FlightNumber="987" />
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H00M"
+   TotalMiles="586" 
+   TotalTripTime="PT2H00M"
+   FLSDepartureDateTime="2014-09-25T19:15:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T20:15:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="NonStop"
+   FLSFlightLegs="1"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T19:15:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T20:15:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="2482"
+    JourneyDuration="PT2H00M"
+    SequenceNumber="1"
+    LegDistance="586"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="MUCLHR20140925LH2482"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H45M"
+   TotalMiles="593" 
+   TotalTripTime="PT3H40M"
+   FLSDepartureDateTime="2014-09-25T18:00:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T20:40:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T18:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T19:05:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="117"
+    JourneyDuration="PT1H05M"
+    SequenceNumber="1"
+    LegDistance="186"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCFRA20140925LH117"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T20:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T20:40:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="920"
+    JourneyDuration="PT1H40M"
+    SequenceNumber="2"
+    LegDistance="407"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="FRALHR20140925LH920"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H45M"
+   TotalMiles="593" 
+   TotalTripTime="PT4H40M"
+   FLSDepartureDateTime="2014-09-25T17:00:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T20:40:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T17:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T18:05:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="115"
+    JourneyDuration="PT1H05M"
+    SequenceNumber="1"
+    LegDistance="186"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCFRA20140925LH115"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="319" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T20:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T20:40:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="920"
+    JourneyDuration="PT1H40M"
+    SequenceNumber="2"
+    LegDistance="407"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="FRALHR20140925LH920"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H55M"
+   TotalMiles="643" 
+   TotalTripTime="PT4H15M"
+   FLSDepartureDateTime="2014-09-25T17:40:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T20:55:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T17:40:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T19:10:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="1798"
+    JourneyDuration="PT1H30M"
+    SequenceNumber="1"
+    LegDistance="413"
+    FLSMeals="S"
+    FLSInflightServices=" "
+    FLSUUID="MUCAMS20140925KL1798"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="AMS" FLSLocationName="Amsterdam" Terminal=" " FLSDayIndicator="" />
+    <MarketingAirline Code="KL" CodeContext="IATA" CompanyShortName="KLM Royal Dutch Airlines" />
+    
+    <Equipment AirEquipType="73W" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T20:30:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T20:55:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="1033"
+    JourneyDuration="PT1H25M"
+    SequenceNumber="2"
+    LegDistance="230"
+    FLSMeals="S"
+    FLSInflightServices=" "
+    FLSUUID="AMSLHR20140925KL1033"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="AMS" FLSLocationName="Amsterdam" Terminal=" " FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="4" FLSDayIndicator="" />
+    <MarketingAirline Code="KL" CodeContext="IATA" CompanyShortName="KLM Royal Dutch Airlines" />
+    
+    <Equipment AirEquipType="73J" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT3H00M"
+   TotalMiles="640" 
+   TotalTripTime="PT3H55M"
+   FLSDepartureDateTime="2014-09-25T18:15:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T21:10:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T18:15:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T19:55:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="1823"
+    JourneyDuration="PT1H40M"
+    SequenceNumber="1"
+    LegDistance="424"
+    FLSMeals=""
+    FLSInflightServices=" "
+    FLSUUID="MUCCDG20140925AF1823"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="CDG" FLSLocationName="Paris Ch. de Gaulle" Terminal="2F" FLSDayIndicator="" />
+    <MarketingAirline Code="AF" CodeContext="IATA" CompanyShortName="Air France" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T20:50:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T21:10:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="1480"
+    JourneyDuration="PT1H20M"
+    SequenceNumber="2"
+    LegDistance="216"
+    FLSMeals=""
+    FLSInflightServices=" "
+    FLSUUID="CDGLHR20140925AF1480"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="CDG" FLSLocationName="Paris Ch. de Gaulle" Terminal="2E" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="4" FLSDayIndicator="" />
+    <MarketingAirline Code="AF" CodeContext="IATA" CompanyShortName="Air France" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT3H30M"
+   TotalMiles="1122" 
+   TotalTripTime="PT4H25M"
+   FLSDepartureDateTime="2014-09-25T17:45:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T21:10:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T17:45:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T19:15:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="3201"
+    JourneyDuration="PT1H30M"
+    SequenceNumber="1"
+    LegDistance="512"
+    FLSMeals=""
+    FLSInflightServices=" "
+    FLSUUID="MUCCPH20140925SK3201"
+    FLSUUIDActualFlight="MUCCPH20140925LH2446"
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="CPH" FLSLocationName="Copenhagen Kastrup" Terminal="3" FLSDayIndicator="" />
+    <MarketingAirline Code="SK" CodeContext="IATA" CompanyShortName="SAS Scandinavian Airlines" />
+    <OperatingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" FlightNumber="2446" />
+    <Equipment AirEquipType="319" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T20:10:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T21:10:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="1501"
+    JourneyDuration="PT2H00M"
+    SequenceNumber="2"
+    LegDistance="610"
+    FLSMeals="M"
+    FLSInflightServices=" "
+    FLSUUID="CPHLHR20140925SK1501"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="CPH" FLSLocationName="Copenhagen Kastrup" Terminal="3" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="2" FLSDayIndicator="" />
+    <MarketingAirline Code="SK" CodeContext="IATA" CompanyShortName="SAS Scandinavian Airlines" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H35M"
+   TotalMiles="614" 
+   TotalTripTime="PT3H15M"
+   FLSDepartureDateTime="2014-09-25T19:00:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T21:15:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T19:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T20:10:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="2020"
+    JourneyDuration="PT1H10M"
+    SequenceNumber="1"
+    LegDistance="302"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCDUS20140925LH2020"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="DUS" FLSLocationName="Duesseldorf" Terminal=" " FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T20:50:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T21:15:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="3388"
+    JourneyDuration="PT1H25M"
+    SequenceNumber="2"
+    LegDistance="312"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="DUSLHR20140925LH3388"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="DUS" FLSLocationName="Duesseldorf" Terminal=" " FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H50M"
+   TotalMiles="773" 
+   TotalTripTime="PT3H45M"
+   FLSDepartureDateTime="2014-09-25T18:30:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T21:15:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T18:30:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T19:40:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="3689"
+    JourneyDuration="PT1H10M"
+    SequenceNumber="1"
+    LegDistance="304"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="MUCGVA20140925LX3689"
+    FLSUUIDActualFlight="MUCGVA20140925LH2388"
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="GVA" FLSLocationName="Geneva" Terminal="M" FLSDayIndicator="" />
+    <MarketingAirline Code="LX" CodeContext="IATA" CompanyShortName="SWISS" />
+    <OperatingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" FlightNumber="2388" />
+    <Equipment AirEquipType="CR9" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T20:35:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T21:15:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="358"
+    JourneyDuration="PT1H40M"
+    SequenceNumber="2"
+    LegDistance="469"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="GVALHR20140925LX358"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="GVA" FLSLocationName="Geneva" Terminal="M" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LX" CodeContext="IATA" CompanyShortName="SWISS" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H35M"
+   TotalMiles="614" 
+   TotalTripTime="PT4H25M"
+   FLSDepartureDateTime="2014-09-25T17:50:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T21:15:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T17:50:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T19:00:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="2018"
+    JourneyDuration="PT1H10M"
+    SequenceNumber="1"
+    LegDistance="302"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCDUS20140925LH2018"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="DUS" FLSLocationName="Duesseldorf" Terminal=" " FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T20:50:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T21:15:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="3388"
+    JourneyDuration="PT1H25M"
+    SequenceNumber="2"
+    LegDistance="312"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="DUSLHR20140925LH3388"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="DUS" FLSLocationName="Duesseldorf" Terminal=" " FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H25M"
+   TotalMiles="589" 
+   TotalTripTime="PT4H20M"
+   FLSDepartureDateTime="2014-09-25T18:15:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T21:35:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T18:15:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T19:35:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="2292"
+    JourneyDuration="PT1H20M"
+    SequenceNumber="1"
+    LegDistance="371"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="MUCBRU20140925LH2292"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="BRU" FLSLocationName="Brussels" Terminal=" " FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T21:30:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T21:35:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="5598"
+    JourneyDuration="PT1H05M"
+    SequenceNumber="2"
+    LegDistance="218"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="BRULHR20140925LH5598"
+    FLSUUIDActualFlight="BRULHR20140925SN2103"
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="BRU" FLSLocationName="Brussels" Terminal=" " FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    <OperatingAirline Code="SN" CodeContext="IATA" CompanyShortName="Brussels Airlines" FlightNumber="2103" />
+    <Equipment AirEquipType="319" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H25M"
+   TotalMiles="589" 
+   TotalTripTime="PT4H20M"
+   FLSDepartureDateTime="2014-09-25T18:15:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T21:35:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T18:15:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T19:35:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="7060"
+    JourneyDuration="PT1H20M"
+    SequenceNumber="1"
+    LegDistance="371"
+    FLSMeals=""
+    FLSInflightServices="  9"
+    FLSUUID="MUCBRU20140925SN7060"
+    FLSUUIDActualFlight="MUCBRU20140925LH2292"
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="BRU" FLSLocationName="Brussels" Terminal=" " FLSDayIndicator="" />
+    <MarketingAirline Code="SN" CodeContext="IATA" CompanyShortName="Brussels Airlines" />
+    <OperatingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" FlightNumber="2292" />
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T21:30:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T21:35:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="2103"
+    JourneyDuration="PT1H05M"
+    SequenceNumber="2"
+    LegDistance="218"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="BRULHR20140925SN2103"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="BRU" FLSLocationName="Brussels" Terminal=" " FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="SN" CodeContext="IATA" CompanyShortName="Brussels Airlines" />
+    
+    <Equipment AirEquipType="319" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H50M"
+   TotalMiles="652" 
+   TotalTripTime="PT3H50M"
+   FLSDepartureDateTime="2014-09-25T18:50:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T21:40:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T18:50:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T19:50:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="3627"
+    JourneyDuration="PT1H00M"
+    SequenceNumber="1"
+    LegDistance="162"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCZRH20140925LX3627"
+    FLSUUIDActualFlight="MUCZRH20140925LH2372"
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="ZRH" FLSLocationName="Zurich" Terminal=" " FLSDayIndicator="" />
+    <MarketingAirline Code="LX" CodeContext="IATA" CompanyShortName="SWISS" />
+    <OperatingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" FlightNumber="2372" />
+    <Equipment AirEquipType="E95" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T20:50:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T21:40:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="340"
+    JourneyDuration="PT1H50M"
+    SequenceNumber="2"
+    LegDistance="490"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="ZRHLHR20140925LX340"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="ZRH" FLSLocationName="Zurich" Terminal=" " FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LX" CodeContext="IATA" CompanyShortName="SWISS" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT1H55M"
+   TotalMiles="586" 
+   TotalTripTime="PT1H55M"
+   FLSDepartureDateTime="2014-09-25T21:05:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T22:00:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="NonStop"
+   FLSFlightLegs="1"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T21:05:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T22:00:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="957"
+    JourneyDuration="PT1H55M"
+    SequenceNumber="1"
+    LegDistance="586"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="MUCLHR20140925BA957"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="5" FLSDayIndicator="" />
+    <MarketingAirline Code="BA" CodeContext="IATA" CompanyShortName="British Airways" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT1H55M"
+   TotalMiles="586" 
+   TotalTripTime="PT1H55M"
+   FLSDepartureDateTime="2014-09-25T21:05:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T22:00:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="NonStop"
+   FLSFlightLegs="1"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T21:05:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T22:00:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="5047"
+    JourneyDuration="PT1H55M"
+    SequenceNumber="1"
+    LegDistance="586"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="MUCLHR20140925AB5047"
+    FLSUUIDActualFlight="MUCLHR20140925BA957"
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="5" FLSDayIndicator="" />
+    <MarketingAirline Code="AB" CodeContext="IATA" CompanyShortName="Air Berlin" />
+    <OperatingAirline Code="BA" CodeContext="IATA" CompanyShortName="British Airways" FlightNumber="957" />
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H45M"
+   TotalMiles="593" 
+   TotalTripTime="PT4H10M"
+   FLSDepartureDateTime="2014-09-25T19:00:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T22:10:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="Connect"
+   FLSFlightLegs="2"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T19:00:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T20:05:00"
+    FLSArrivalTimeOffset="+0200"
+    
+    FlightNumber="119"
+    JourneyDuration="PT1H05M"
+    SequenceNumber="1"
+    LegDistance="186"
+    FLSMeals="R"
+    FLSInflightServices="  9"
+    FLSUUID="MUCFRA20140925LH119"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="321" />
+  </FlightLegDetails>
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T21:30:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T22:10:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="922"
+    JourneyDuration="PT1H40M"
+    SequenceNumber="2"
+    LegDistance="407"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="FRALHR20140925LH922"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="FRA" FLSLocationName="Frankfurt" Terminal="1" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="320" />
+  </FlightLegDetails>
+ </FlightDetails>
+ <FlightDetails TotalFlightTime="PT2H00M"
+   TotalMiles="586" 
+   TotalTripTime="PT2H00M"
+   FLSDepartureDateTime="2014-09-25T21:50:00"
+   FLSDepartureTimeOffset="+0200"
+   FLSDepartureCode="MUC"
+   FLSDepartureName="Munich Metro"
+   FLSArrivalDateTime="2014-09-25T22:50:00"
+   FLSArrivalTimeOffset="+0100"
+   FLSArrivalCode="LHR"
+   FLSArrivalName="London Heathrow"
+   FLSFlightType="NonStop"
+   FLSFlightLegs="1"
+   FLSFlightDays="...4..."
+   FLSDayIndicator="" 
+   
+  >
+
+
+  <FlightLegDetails
+    DepartureDateTime="2014-09-25T21:50:00"
+    FLSDepartureTimeOffset="+0200"
+    ArrivalDateTime="2014-09-25T22:50:00"
+    FLSArrivalTimeOffset="+0100"
+    
+    FlightNumber="2484"
+    JourneyDuration="PT2H00M"
+    SequenceNumber="1"
+    LegDistance="586"
+    FLSMeals="S"
+    FLSInflightServices="  9"
+    FLSUUID="MUCLHR20140925LH2484"
+    
+    
+   >
+    <DepartureAirport CodeContext="IATA" LocationCode="MUC" FLSLocationName="Munich" Terminal="2" FLSDayIndicator="" />
+    <ArrivalAirport CodeContext="IATA" LocationCode="LHR" FLSLocationName="London Heathrow" Terminal="1" FLSDayIndicator="" />
+    <MarketingAirline Code="LH" CodeContext="IATA" CompanyShortName="Lufthansa" />
+    
+    <Equipment AirEquipType="319" />
+  </FlightLegDetails>
+ </FlightDetails>
+</OTA_AirDetailsRS>		
