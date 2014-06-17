@@ -20,7 +20,8 @@ public class Window extends JFrame{
 		this.messagingService = new MessagingService(this);
 		this.mainPanel = new MainPanel(this);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setMinimumSize(new Dimension(500,300));
+		this.setMinimumSize(new Dimension(888,666));
+		this.setLocation(111,55);
 		this.getContentPane().add(mainPanel);
 		this.setLayout(new CardLayout());
 		this.pack();

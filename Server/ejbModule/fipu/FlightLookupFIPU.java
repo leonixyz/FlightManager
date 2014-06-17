@@ -33,20 +33,20 @@ public class FlightLookupFIPU extends FIPU {
 	        String year  = String.format("%02d", cal.get(Calendar.YEAR)-2000);
 
 			///////////////// DEFINITIVE WAY ////////////////
-//			URL url = new URL("http://api.flightlookup.com/otajtimetable/v1/TimeTable/?From="+fromCode+"&To="+toCode+"&Date="+month+"%2F"+day+"%2F"+year+"&key="+DEVELOPER_KEY);
-//			URLConnection connection = url.openConnection();
-//			InputStream stream = connection.getInputStream();
-//	        DocumentBuilderFactory objDocumentBuilderFactory = DocumentBuilderFactory.newInstance();
-//	        DocumentBuilder objDocumentBuilder = objDocumentBuilderFactory.newDocumentBuilder();
-//	        Document doc = objDocumentBuilder.parse(stream);
+			URL url = new URL("http://api.flightlookup.com/otajtimetable/v1/TimeTable/?From="+fromCode+"&To="+toCode+"&Date="+month+"%2F"+day+"%2F"+year+"&key="+DEVELOPER_KEY);
+			URLConnection connection = url.openConnection();
+			InputStream stream = connection.getInputStream();
+	        DocumentBuilderFactory objDocumentBuilderFactory = DocumentBuilderFactory.newInstance();
+	        DocumentBuilder objDocumentBuilder = objDocumentBuilderFactory.newDocumentBuilder();
+	        Document doc = objDocumentBuilder.parse(stream);
 			///////////////// DEFINITIVE WAY ////////////////
 
 
 			///////////////// TEMPORARY WAY ////////////////
-			File fXmlFile = new File("/Users/user/api.flightlookup.com.xml");	//TODO change and use the proper file path
-			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-			Document doc = dBuilder.parse(fXmlFile);
+//			File fXmlFile = new File("/Users/user/api.flightlookup.com.xml");	//TODO change and use the proper file path
+//			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+//			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+//			Document doc = dBuilder.parse(fXmlFile);
 			///////////////// TEMPORARY WAY ////////////////
 
 

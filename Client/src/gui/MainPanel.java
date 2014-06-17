@@ -3,6 +3,7 @@ package gui;
 import java.awt.CardLayout;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.SimpleDateFormat;
@@ -14,6 +15,7 @@ import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
@@ -31,7 +33,6 @@ import common.ServerResponse;
 public class MainPanel extends JPanel {
 	
 	private JTabbedPane tabbedPane;
-	private JTextField departureTextField, arrivalTextField;
     private Window parentWindow;
 	private JXDatePicker datePicker;
 	private JComboBox departureComboBox, arrivalComboBox;
@@ -41,10 +42,6 @@ public class MainPanel extends JPanel {
 		this.parentWindow = parentWindow;
 		
 		// initialize fields for user input
-		this.departureTextField = new JTextField(3);
-		this.departureTextField.setMaximumSize(new Dimension(80,30));
-		this.arrivalTextField = new JTextField(3);
-		this.arrivalTextField.setMaximumSize(new Dimension(80,30));
 		this.datePicker = new JXDatePicker();
 		// initialize the rest
 		this.setLayout(new CardLayout());
@@ -141,9 +138,19 @@ public class MainPanel extends JPanel {
 	
 	
 	public void addQueryTab(ServerResponse response){
+		
+		if(response==null){
+			// consider the case that no response is given
+			// i.e. no connections are available
+			JOptionPane.showMessageDialog(null, "Sorry, there are no results satisfying these conditions.");
+			return;
+		}
+		
 		// add a new tab to the main tabbed pane with given a server response
 		JTextArea contentDisplayer = new JTextArea();
+		contentDisplayer.setFont(new Font("Monospaced", Font.PLAIN, 14));
 		contentDisplayer.setText(response.getContent());
+		contentDisplayer.setEditable(false);
 		
 		JPanel queryPanel = new JPanel();
 			queryPanel.setLayout(new CardLayout());
@@ -151,6 +158,8 @@ public class MainPanel extends JPanel {
 				scrollPane.getViewport().add( contentDisplayer );
 			queryPanel.add(scrollPane);
 		this.tabbedPane.addTab(response.getTitle(), queryPanel);
+		this.tabbedPane.setSelectedIndex(1);
+		contentDisplayer.setCaretPosition(0);
 		//TODO costruire un tab a partire da una struttura dati dinamica
 		//     che costituisce la risposta del server alla query dell'utente
 	}
@@ -174,9 +183,13 @@ public class MainPanel extends JPanel {
 			}
 			
 			// building the request
+			
+			String departureCode = AirportListElement.AIRPORTS.get(departureComboBox.getSelectedItem());
+			String arrivalCode = AirportListElement.AIRPORTS.get(arrivalComboBox.getSelectedItem());
+			
 			ClientRequest request = new ClientRequest(
-					departureTextField.getText(),
-					arrivalTextField.getText(),
+					departureCode,
+					arrivalCode,
 					datePicker.getDate(),
 					webservice
 				);
