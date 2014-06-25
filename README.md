@@ -11,6 +11,9 @@ FlightManager
 - run the client
 - enjoy!
 
+
+## What is it?
+
 Project for the course of Distributed Systems and Internet Technologies
 
 The followings is the requirements document provided by the teaching assistant.
