@@ -20,7 +20,16 @@ import common.ServerResponse;
 public class FlightLookupFIPU extends FIPU {
 
 	private static final String DEVELOPER_KEY = "4383495C-4B5E-4229-8446-E8C203783296";
-	
+
+ /**
+  * Handles the server response
+  *
+  * @param fromCode Airport code
+  * @param toCode Arrival airport Code
+  * @param date When?
+  *
+  * @return ServerResponse
+  */  
 	public ServerResponse requestResponse(String fromCode, String toCode, Date date){
 		StringBuilder s = new StringBuilder();
 		try{

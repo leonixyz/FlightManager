@@ -45,7 +45,13 @@ public class MessagingService{
 		this.remoteQueue = HornetQJMSClient.createQueue("testQueue");
 	}
 	
-	
+ /**
+  * Sends the message to the queue
+  *
+  * @param clientRequest The request of the client that needs to be forwarded
+  *
+  * @return null
+  */
 	public void sendRequest(ClientRequest clientRequest) {
 		QueueConnection connection = null;
 		try {

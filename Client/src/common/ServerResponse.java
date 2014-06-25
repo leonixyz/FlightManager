@@ -10,6 +10,14 @@ public class ServerResponse implements Serializable {
 	private String title;
 	private String content;
 	
+ /**
+  * Creates a ServerResponse
+  *
+  * @param title The title of the response
+  * @param content The content of the response
+  *
+  * @return ServerResponse
+  */  	
 	public ServerResponse(String title, String content){
 		this.setTitle(title);
 		this.setContent(content);
