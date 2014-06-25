@@ -29,6 +29,13 @@ public class RequestListener implements MessageListener {
 	@Resource(mappedName = "java:/JmsXA")
 	ConnectionFactory connectionFactory;
 
+
+ /** 
+   * Listens on incoming messages
+   *
+   * @param requestMessage The message incoming from the request
+   * @return void
+  */
 	public void onMessage(Message requestMessage) {
 		Connection connection = null;
 		try {

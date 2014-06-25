@@ -16,7 +16,17 @@ public class ClientRequest implements Serializable {
 	private String departure, arrival;
 	private Date date;
 	private int desiredWebservice;
-	
+
+ /**
+  * Creates the ClientRequest
+  *
+  * @param departure Where does the plane leave from
+  * @param arrival Where does the plane fly to
+  * @param date When
+  * @param desiredWebservice Which service to use as API
+  *
+  * @return ClientRequest
+  */  
 	public ClientRequest (String departure, String arrival, Date date, int desiredWebservice) {
 		this.setDeparture(departure);
 		this.setArrival(arrival);

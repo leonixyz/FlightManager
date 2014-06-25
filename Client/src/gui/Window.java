@@ -14,7 +14,12 @@ public class Window extends JFrame{
 	
 	private MainPanel mainPanel;
 	private MessagingService messagingService;
-	
+
+ /**
+  * Create Window
+  *
+  * @return Window
+  */
 	public Window(){
 		super();
 		this.messagingService = new MessagingService(this);
@@ -28,11 +33,21 @@ public class Window extends JFrame{
 		this.setVisible(true);		
 	}
 	
+ /**
+  * Dispatches the request to the JMS
+  *
+  * @param request The request to be forwarded
+  */
 	public void dispatchRequest(ClientRequest request){
 		//TODO controllare se si puo mandare la richiesta
 		this.messagingService.sendRequest(request);
 	}
 	
+ /**
+  * Dispatches the response to the JMS
+  *
+  * @param response The response to be forwarded
+  */
 	public void dispatchResponse(ServerResponse response){
 		//TODO controllare se si puo fare
 		this.mainPanel.addQueryTab(response);
