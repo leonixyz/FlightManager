@@ -30,10 +30,14 @@ public class AirportListElement {
 		try {
 			dBuilder = dbFactory.newDocumentBuilder();
 			doc = dBuilder.parse(xml);
-		} catch (ParserConfigurationException | SAXException | IOException e) {
-			e.printStackTrace();
-			System.err.println("Warning: cannot parse XML data for loading IATA airport codes, the autocompletion might not work.");
+		} catch (ParserConfigurationException e) {
+			Window.sendError("Warning: cannot parse XML data for loading IATA airport codes,\nthe autocompletion might not work.");
+		} catch (SAXException e) {
+			Window.sendError("Warning: cannot parse XML data for loading IATA airport codes,\nthe autocompletion might not work.");
+		} catch (IOException e) {
+			Window.sendError("Warning: cannot parse XML data for loading IATA airport codes,\nthe autocompletion might not work.");
 		}
+		
 		if(doc!=null){
 			// populating the hash map with key/values pairs
 			doc.getDocumentElement().normalize();

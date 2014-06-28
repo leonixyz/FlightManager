@@ -4,9 +4,9 @@ import java.awt.CardLayout;
 import java.awt.Dimension;
 
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 import jms.MessagingService;
-
 import common.ClientRequest;
 import common.ServerResponse;
 
@@ -33,23 +33,32 @@ public class Window extends JFrame{
 		this.setVisible(true);		
 	}
 	
- /**
-  * Dispatches the request to the JMS
-  *
-  * @param request The request to be forwarded
-  */
+	 /**
+	  * Dispatches the request to the JMS
+	  *
+	  * @param request The request to be forwarded
+	  */
 	public void dispatchRequest(ClientRequest request){
 		//TODO controllare se si puo mandare la richiesta
 		this.messagingService.sendRequest(request);
 	}
 	
- /**
-  * Dispatches the response to the JMS
-  *
-  * @param response The response to be forwarded
-  */
+	 /**
+	  * Dispatches the response to the JMS
+	  *
+	  * @param response The response to be forwarded
+	  */
 	public void dispatchResponse(ServerResponse response){
 		//TODO controllare se si puo fare
 		this.mainPanel.addQueryTab(response);
+	}
+	
+	 /**
+	  * Pop up an error message
+	  *
+	  * @param response The response to be forwarded
+	  */
+	public static void sendError(String error){
+		JOptionPane.showMessageDialog(null, error);
 	}
 }
