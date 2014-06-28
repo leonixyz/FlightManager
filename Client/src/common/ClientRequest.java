@@ -44,38 +44,87 @@ public class ClientRequest implements Serializable {
 		this.setDesiredWebservice(desiredWebservice);
 	}
 
+	/**
+	 * Getter for the date
+	 * 
+	 * @return The date
+	 */
 	public Date getDate() {
 		return this.date;
 	}
 
+	/**
+	 * Setter for the date
+	 * 
+	 * @param date
+	 *            The date
+	 */
 	public void setDate(Date date) {
 		this.date = date;
 	}
 
+	/**
+	 * Getter for the departure IATA code
+	 * 
+	 * @return Departure IATA code
+	 */
 	public String getDeparture() {
 		return this.departure;
 	}
 
+	/**
+	 * Setter for the departure IATA code
+	 * 
+	 * @param departure
+	 *            Departure IATA code
+	 */
 	public void setDeparture(String departure) {
 		this.departure = departure;
 	}
 
+	/**
+	 * Getter for the arrival IATA code
+	 * 
+	 * @return Arrival IATA code
+	 */
 	public String getArrival() {
 		return this.arrival;
 	}
 
+	/**
+	 * Setter for the arrival IATA code
+	 * 
+	 * @param arrival
+	 *            Arrival IATA code
+	 */
 	public void setArrival(String arrival) {
 		this.arrival = arrival;
 	}
 
+	/**
+	 * Getter for the web service to use
+	 * 
+	 * @return Number identifying the desired web service
+	 */
 	public int getDesiredWebservice() {
 		return this.desiredWebservice;
 	}
 
+	/**
+	 * Setter for the web service to use
+	 * 
+	 * @param desiredWebservice
+	 *            Number identifying the desired web service
+	 */
 	public void setDesiredWebservice(int desiredWebservice) {
 		this.desiredWebservice = desiredWebservice;
 	}
 
+	/**
+	 * Translate the object to a string representation.
+	 * 
+	 * @return The string representation
+	 */
 	@Override
 	public String toString() {
 		return "ClientRequest [departure=" + this.departure + ", arrival="

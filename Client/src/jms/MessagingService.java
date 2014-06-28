@@ -26,8 +26,9 @@ import common.ServerResponse;
 
 /**
  * This class is responsible for the JMS part of the client.
+ * 
  * @author user
- *
+ * 
  */
 public class MessagingService {
 
@@ -46,7 +47,6 @@ public class MessagingService {
 	 * @param myWindow
 	 *            The client window that want this service
 	 */
-
 	public MessagingService(Window myWindow) {
 		this.window = myWindow;
 		MessagingService.connectionParams.put(
@@ -70,41 +70,96 @@ public class MessagingService {
 	 * @return null
 	 */
 	public void sendRequest(ClientRequest clientRequest) {
+
+		// create a connection
 		QueueConnection connection = null;
 		try {
 			connection = (QueueConnection) this.connectionFactory
 					.createConnection();
-			QueueSession session = connection.createQueueSession(false,
+		} catch (JMSException e) {
+			Window.sendError("Couldn't initialize the connection to the server.");
+			return;
+		}
+
+		// creates a session
+		QueueSession session;
+		try {
+			session = connection.createQueueSession(false,
 					Session.AUTO_ACKNOWLEDGE);
-			QueueRequestor requestor = new QueueRequestor(session,
-					this.remoteQueue);
+		} catch (JMSException e) {
+			Window.sendError("Couldn't get a session from the connection to the server.\nAre you using the right JRE?");
+			return;
+		}
+
+		// create a temporary queue to get the response back
+		QueueRequestor requestor;
+		try {
+			requestor = new QueueRequestor(session, this.remoteQueue);
+		} catch (JMSException e) {
+			Window.sendError("Cannot create a temporary JMS queue to get the response back.");
+			return;
+
+		}
+
+		// connect to the server
+		try {
 			connection.start();
+		} catch (JMSException e) {
+			Window.sendError("The JMS is doing nasty things.\nCannot start the connection.\nThe request has been ignored.");
+			return;
+		}
 
-			ObjectMessage requestMessage = session.createObjectMessage();
+		// create a message for the request
+		ObjectMessage requestMessage;
+		try {
+			requestMessage = session.createObjectMessage();
+		} catch (JMSException e) {
+			Window.sendError("The JMS is doing nasty things.\nCannot create an object message.\nThe request has been ignored.");
+			return;
+		}
+
+		// wrap the request into the message
+		try {
 			requestMessage.setObject(clientRequest);
+		} catch (JMSException e) {
+			Window.sendError("The JMS is doing nasty things.\nCannot set the object message.\nThe request has been ignored.");
+			return;
+		}
 
-			Message responseMessage;
+		// wait for the response on the temporary queue
+		Message responseMessage;
+		try {
 			responseMessage = requestor.request(requestMessage);
+		} catch (JMSException e) {
+			Window.sendError("The JMS is doing nasty things.\nCannot get the response back.\nYour request has been lost.");
+			return;
+		}
 
-			ServerResponse serverResponse = null;
-			if (responseMessage instanceof ObjectMessage) {
+		// process the response
+		ServerResponse serverResponse = null;
+		if (responseMessage instanceof ObjectMessage) {
+			try {
 				serverResponse = (ServerResponse) ((ObjectMessage) responseMessage)
 						.getObject();
-				this.window.dispatchResponse(serverResponse);
-			} else {
-				// TODO error
-			}
-		} catch (JMSException e) {
-			// TODO splittare e differenziare
-			e.printStackTrace();
-		} finally {
-			try {
-				if (connection != null) {
-					connection.close();
-				}
 			} catch (JMSException e) {
-				// TODO print error
+				Window.sendError("The JMS is doing nasty things.\nCannot get a valid response back.\nThe response at your request has been lost.");
+				return;
+			}
+			this.window.dispatchResponse(serverResponse);
+		} else {
+			Window.sendError("The reponse from the server is malformed, either this client is\nnot compatible with the server, or you\nare under some kind of attack.");
+			return;
+		}
+
+		// close resources
+		if (connection != null) {
+			try {
+				connection.close();
+			} catch (JMSException e) {
+				Window.sendError("Cannot close the connection.");
+				return;
 			}
 		}
+
 	}
 }

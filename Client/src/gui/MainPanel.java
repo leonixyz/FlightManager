@@ -186,8 +186,6 @@ public class MainPanel extends JPanel {
 		this.tabbedPane.addTab(response.getTitle(), queryPanel);
 		this.tabbedPane.setSelectedIndex(1);
 		contentDisplayer.setCaretPosition(0);
-		// TODO costruire un tab a partire da una struttura dati dinamica
-		// che costituisce la risposta del server alla query dell'utente
 	}
 
 	/**

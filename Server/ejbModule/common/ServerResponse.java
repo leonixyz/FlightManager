@@ -32,18 +32,40 @@ public class ServerResponse implements Serializable {
 		this.setContent(content);
 	}
 
+	/**
+	 * Getter for title.
+	 * 
+	 * @return The title
+	 */
 	public String getTitle() {
 		return this.title;
 	}
 
+	/**
+	 * Getter for content
+	 * 
+	 * @return The content
+	 */
 	public String getContent() {
 		return this.content;
 	}
 
+	/**
+	 * Setter for title
+	 * 
+	 * @param title
+	 *            The title
+	 */
 	public void setTitle(String title) {
 		this.title = title;
 	}
 
+	/**
+	 * Setter for content
+	 * 
+	 * @param content
+	 *            The content
+	 */
 	public void setContent(String content) {
 		this.content = content;
 	}

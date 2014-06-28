@@ -45,7 +45,6 @@ public class Window extends JFrame {
 	 *            The request to be forwarded
 	 */
 	public void dispatchRequest(ClientRequest request) {
-		// TODO controllare se si puo mandare la richiesta
 		this.messagingService.sendRequest(request);
 	}
 
@@ -56,7 +55,6 @@ public class Window extends JFrame {
 	 *            The response to be forwarded
 	 */
 	public void dispatchResponse(ServerResponse response) {
-		// TODO controllare se si puo fare
 		this.mainPanel.addQueryTab(response);
 	}
 
