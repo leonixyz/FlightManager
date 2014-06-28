@@ -21,32 +21,43 @@ import fipu.FIPU;
 import fipu.FlightLookupFIPU;
 import fipu.FlightStatsFIPU;
 
+/**
+ * This is the Java Bean responsible to listen on a JMS queue for client
+ * incoming requests and dispatch them to the correct flight information
+ * providing unit (FIPU), and once the response is back it is sent back
+ * to the right client.
+ * 
+ * @author user
+ * 
+ */
 @MessageDriven(name = "RequestListener", activationConfig = {
 		@ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Queue"),
 		@ActivationConfigProperty(propertyName = "destination", propertyValue = "queue/testQueue") })
-
 public class RequestListener implements MessageListener {
 	@Resource(mappedName = "java:/JmsXA")
 	ConnectionFactory connectionFactory;
-	
-	public static void logError(String error){
+
+	public static void logError(String error) {
 		System.err.println(error);
 	}
 
-	 /** 
-	   * Listener for incoming messages that is also responsible to build and send the response back.
-	   *
-	   * @param requestMessage The message incoming from the request
-	   * @return void
-	  */
+	/**
+	 * Listener for incoming messages that is also responsible to build and send
+	 * the response back.
+	 * 
+	 * @param requestMessage
+	 *            The message incoming from the request
+	 * @return void
+	 */
 	public void onMessage(Message requestMessage) {
-		
+
 		Connection connection = null;
 		ClientRequest clientRequest = null;
-		
+
 		// manage the client request
 		try {
-			clientRequest = (ClientRequest) ((ObjectMessage) requestMessage).getObject();
+			clientRequest = (ClientRequest) ((ObjectMessage) requestMessage)
+					.getObject();
 		} catch (JMSException e1) {
 			logError("[RequestListener] The JMS provider failed to set the object due to some internal error. ");
 			return;
@@ -82,7 +93,7 @@ public class RequestListener implements MessageListener {
 			logError("[RequestListener] The JMS provider failed to get the JMSReplyTo destination due to some internal error.");
 			return;
 		}
-		
+
 		// create a message producer for the reply
 		MessageProducer producer;
 		try {
@@ -94,16 +105,17 @@ public class RequestListener implements MessageListener {
 
 		// choose the webservice to use
 		FIPU desiredFIPU = null;
-		switch(desiredWebservice) {
+		switch (desiredWebservice) {
 		case ClientRequest.FLIGHT_LOOKUP:
-			desiredFIPU = new FlightLookupFIPU(); 
+			desiredFIPU = new FlightLookupFIPU();
 			break;
 		case ClientRequest.FLIGHT_STATS:
 			desiredFIPU = new FlightStatsFIPU();
 		}
 
 		// build the response and send it back
-		ServerResponse serverResponse = desiredFIPU.requestResponse(departure, destination, date);
+		ServerResponse serverResponse = desiredFIPU.requestResponse(departure,
+				destination, date);
 		ObjectMessage response;
 		try {
 			response = session.createObjectMessage();
@@ -111,21 +123,21 @@ public class RequestListener implements MessageListener {
 			logError("[RequestListener] The JMS provider failed to create the reply message due to some internal error.");
 			return;
 		}
-		
+
 		try {
 			response.setObject(serverResponse);
 		} catch (JMSException e1) {
 			logError("[RequestListener] The JMS provider failed to set the object due to some internal error. ");
 			return;
 		}
-		
+
 		try {
 			producer.send(response);
 		} catch (JMSException e1) {
 			logError("[RequestListener] The JMS provider failed to send the message due to some internal error. ");
 			return;
 		}
-		
+
 		// close resources
 		try {
 			session.close();

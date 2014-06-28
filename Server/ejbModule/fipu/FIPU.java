@@ -4,11 +4,28 @@ import java.util.Date;
 
 import common.ServerResponse;
 
-// abstract class to be extended depending on all the different 
-// web services that are going to be supported
-
+/**
+ * This is the flight information providing unit (FIPU) for a generic API
+ * provider.
+ * 
+ * @author user
+ * 
+ */
 public abstract class FIPU {
-	
-	// sends the request, process it, and returns a response for the client
-	public abstract ServerResponse requestResponse(String fromCode, String toCode, Date date);
+
+	/**
+	 * Sends a request to a generic API provider and returns a response to the
+	 * caller.
+	 * 
+	 * @param fromCode
+	 *            Airport code
+	 * @param toCode
+	 *            Arrival airport Code
+	 * @param date
+	 *            When?
+	 * 
+	 * @return ServerResponse
+	 */
+	public abstract ServerResponse requestResponse(String fromCode,
+			String toCode, Date date);
 }

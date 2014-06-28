@@ -24,56 +24,76 @@ import org.hornetq.core.remoting.impl.netty.TransportConstants;
 import common.ClientRequest;
 import common.ServerResponse;
 
-public class MessagingService{
+/**
+ * This class is responsible for the JMS part of the client.
+ * @author user
+ *
+ */
+public class MessagingService {
 
 	private static final String JBOSS_HOST = "localhost";
 	private static final int JBOSS_PORT = 5455;
-	
+
 	private static Map connectionParams = new HashMap();
-	
+
 	private Window window;
 	private ConnectionFactory connectionFactory;
 	private Queue remoteQueue;
-	
-	
-	public MessagingService(Window myWindow){
+
+	/**
+	 * Initializes a class responsible for managing the JMS part of the client.
+	 * 
+	 * @param myWindow
+	 *            The client window that want this service
+	 */
+
+	public MessagingService(Window myWindow) {
 		this.window = myWindow;
-	    MessagingService.connectionParams.put(TransportConstants.PORT_PROP_NAME, JBOSS_PORT);
-	    MessagingService.connectionParams.put(TransportConstants.HOST_PROP_NAME, JBOSS_HOST);
-		TransportConfiguration transportConfiguration =  new TransportConfiguration(NettyConnectorFactory.class.getName(), connectionParams);
-		this.connectionFactory = (ConnectionFactory) HornetQJMSClient.createConnectionFactoryWithoutHA(JMSFactoryType.CF, transportConfiguration);
+		MessagingService.connectionParams.put(
+				TransportConstants.PORT_PROP_NAME, JBOSS_PORT);
+		MessagingService.connectionParams.put(
+				TransportConstants.HOST_PROP_NAME, JBOSS_HOST);
+		TransportConfiguration transportConfiguration = new TransportConfiguration(
+				NettyConnectorFactory.class.getName(), connectionParams);
+		this.connectionFactory = (ConnectionFactory) HornetQJMSClient
+				.createConnectionFactoryWithoutHA(JMSFactoryType.CF,
+						transportConfiguration);
 		this.remoteQueue = HornetQJMSClient.createQueue("testQueue");
 	}
-	
- /**
-  * Sends the message to the queue
-  *
-  * @param clientRequest The request of the client that needs to be forwarded
-  *
-  * @return null
-  */
+
+	/**
+	 * Sends the message to the queue
+	 * 
+	 * @param clientRequest
+	 *            The request of the client that needs to be forwarded
+	 * 
+	 * @return null
+	 */
 	public void sendRequest(ClientRequest clientRequest) {
 		QueueConnection connection = null;
 		try {
-			connection = (QueueConnection) this.connectionFactory.createConnection();
-			QueueSession session = connection.createQueueSession(false, Session.AUTO_ACKNOWLEDGE);
-			QueueRequestor requestor = new QueueRequestor(session, this.remoteQueue);
+			connection = (QueueConnection) this.connectionFactory
+					.createConnection();
+			QueueSession session = connection.createQueueSession(false,
+					Session.AUTO_ACKNOWLEDGE);
+			QueueRequestor requestor = new QueueRequestor(session,
+					this.remoteQueue);
 			connection.start();
-			
+
 			ObjectMessage requestMessage = session.createObjectMessage();
 			requestMessage.setObject(clientRequest);
-			
-		    Message responseMessage;
-		    responseMessage=requestor.request(requestMessage);
-		    
-		    ServerResponse serverResponse = null;
-		    if (responseMessage instanceof ObjectMessage){
-		        serverResponse = (ServerResponse)((ObjectMessage) responseMessage).getObject();
-			    this.window.dispatchResponse(serverResponse);
-		    }
-		    else{
-		        //TODO error
-		    }
+
+			Message responseMessage;
+			responseMessage = requestor.request(requestMessage);
+
+			ServerResponse serverResponse = null;
+			if (responseMessage instanceof ObjectMessage) {
+				serverResponse = (ServerResponse) ((ObjectMessage) responseMessage)
+						.getObject();
+				this.window.dispatchResponse(serverResponse);
+			} else {
+				// TODO error
+			}
 		} catch (JMSException e) {
 			// TODO splittare e differenziare
 			e.printStackTrace();
@@ -83,7 +103,7 @@ public class MessagingService{
 					connection.close();
 				}
 			} catch (JMSException e) {
-				//TODO print error
+				// TODO print error
 			}
 		}
 	}

@@ -3,41 +3,51 @@ package common;
 import java.io.Serializable;
 import java.util.Date;
 
+/**
+ * The request that the user sends to the server containing all the data needed
+ * to perform an API call to the providers of flight information.
+ * 
+ * @author user
+ * 
+ */
 public class ClientRequest implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	
+
 	// defines which webservice to use
-	public static final int
-		FLIGHT_LOOKUP = 0,
-		FLIGHT_STATS = 1;
-		
+	public static final int FLIGHT_LOOKUP = 0, FLIGHT_STATS = 1;
+
 	// instance data
 	private String departure, arrival;
 	private Date date;
 	private int desiredWebservice;
-	
- /**
-  * Creates the ClientRequest
-  *
-  * @param departure Where does the plane leave from
-  * @param arrival Where does the plane fly to
-  * @param date When
-  * @param desiredWebservice Which service to use as API
-  *
-  * @return ClientRequest
-  */  	
-	public ClientRequest (String departure, String arrival, Date date, int desiredWebservice) {
+
+	/**
+	 * Creates the ClientRequest
+	 * 
+	 * @param departure
+	 *            Where does the plane leave from
+	 * @param arrival
+	 *            Where does the plane fly to
+	 * @param date
+	 *            When
+	 * @param desiredWebservice
+	 *            Which service to use as API
+	 * 
+	 * @return ClientRequest
+	 */
+	public ClientRequest(String departure, String arrival, Date date,
+			int desiredWebservice) {
 		this.setDeparture(departure);
 		this.setArrival(arrival);
 		this.setDate(date);
 		this.setDesiredWebservice(desiredWebservice);
 	}
-	
+
 	public Date getDate() {
 		return this.date;
 	}
-	
+
 	public void setDate(Date date) {
 		this.date = date;
 	}
@@ -45,7 +55,7 @@ public class ClientRequest implements Serializable {
 	public String getDeparture() {
 		return this.departure;
 	}
-	
+
 	public void setDeparture(String departure) {
 		this.departure = departure;
 	}
@@ -53,7 +63,7 @@ public class ClientRequest implements Serializable {
 	public String getArrival() {
 		return this.arrival;
 	}
-	
+
 	public void setArrival(String arrival) {
 		this.arrival = arrival;
 	}
@@ -61,13 +71,15 @@ public class ClientRequest implements Serializable {
 	public int getDesiredWebservice() {
 		return this.desiredWebservice;
 	}
-	
+
 	public void setDesiredWebservice(int desiredWebservice) {
 		this.desiredWebservice = desiredWebservice;
 	}
 
 	@Override
 	public String toString() {
-		return "ClientRequest [departure="+this.departure+", arrival="+this.arrival+", date="+this.date+", desiredWebservice="+this.desiredWebservice+"]";
+		return "ClientRequest [departure=" + this.departure + ", arrival="
+				+ this.arrival + ", date=" + this.date + ", desiredWebservice="
+				+ this.desiredWebservice + "]";
 	}
 }
