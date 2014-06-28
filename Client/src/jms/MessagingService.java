@@ -66,10 +66,11 @@ public class MessagingService {
 	 * 
 	 * @param clientRequest
 	 *            The request of the client that needs to be forwarded
+	 * @return 
 	 * 
 	 * @return null
 	 */
-	public void sendRequest(ClientRequest clientRequest) {
+	public boolean sendRequest(ClientRequest clientRequest) {
 
 		// create a connection
 		QueueConnection connection = null;
@@ -78,7 +79,7 @@ public class MessagingService {
 					.createConnection();
 		} catch (JMSException e) {
 			Window.sendError("Couldn't initialize the connection to the server.");
-			return;
+			return false;
 		}
 
 		// creates a session
@@ -88,7 +89,7 @@ public class MessagingService {
 					Session.AUTO_ACKNOWLEDGE);
 		} catch (JMSException e) {
 			Window.sendError("Couldn't get a session from the connection to the server.\nAre you using the right JRE?");
-			return;
+			return false;
 		}
 
 		// create a temporary queue to get the response back
@@ -97,7 +98,7 @@ public class MessagingService {
 			requestor = new QueueRequestor(session, this.remoteQueue);
 		} catch (JMSException e) {
 			Window.sendError("Cannot create a temporary JMS queue to get the response back.");
-			return;
+			return false;
 
 		}
 
@@ -106,7 +107,7 @@ public class MessagingService {
 			connection.start();
 		} catch (JMSException e) {
 			Window.sendError("The JMS is doing nasty things.\nCannot start the connection.\nThe request has been ignored.");
-			return;
+			return false;
 		}
 
 		// create a message for the request
@@ -115,7 +116,7 @@ public class MessagingService {
 			requestMessage = session.createObjectMessage();
 		} catch (JMSException e) {
 			Window.sendError("The JMS is doing nasty things.\nCannot create an object message.\nThe request has been ignored.");
-			return;
+			return false;
 		}
 
 		// wrap the request into the message
@@ -123,7 +124,7 @@ public class MessagingService {
 			requestMessage.setObject(clientRequest);
 		} catch (JMSException e) {
 			Window.sendError("The JMS is doing nasty things.\nCannot set the object message.\nThe request has been ignored.");
-			return;
+			return false;
 		}
 
 		// wait for the response on the temporary queue
@@ -132,7 +133,7 @@ public class MessagingService {
 			responseMessage = requestor.request(requestMessage);
 		} catch (JMSException e) {
 			Window.sendError("The JMS is doing nasty things.\nCannot get the response back.\nYour request has been lost.");
-			return;
+			return false;
 		}
 
 		// process the response
@@ -143,12 +144,12 @@ public class MessagingService {
 						.getObject();
 			} catch (JMSException e) {
 				Window.sendError("The JMS is doing nasty things.\nCannot get a valid response back.\nThe response at your request has been lost.");
-				return;
+				return false;
 			}
 			this.window.dispatchResponse(serverResponse);
 		} else {
 			Window.sendError("The reponse from the server is malformed, either this client is\nnot compatible with the server, or you\nare under some kind of attack.");
-			return;
+			return false;
 		}
 
 		// close resources
@@ -157,9 +158,10 @@ public class MessagingService {
 				connection.close();
 			} catch (JMSException e) {
 				Window.sendError("Cannot close the connection.");
-				return;
+				return false;
 			}
 		}
-
+		
+		return true;
 	}
 }
