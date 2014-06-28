@@ -10,22 +10,6 @@ import org.junit.Test;
 
 public class FlightStatsFIPUTest {
 
-	@BeforeClass
-	public static void setUpBeforeClass() throws Exception {
-	}
-
-	@AfterClass
-	public static void tearDownAfterClass() throws Exception {
-	}
-
-	@Before
-	public void setUp() throws Exception {
-	}
-
-	@After
-	public void tearDown() throws Exception {
-	}
-
 	@Test
 	public void testRequestResponse() {
 		fail("Not yet implemented");
