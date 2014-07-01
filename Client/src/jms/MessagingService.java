@@ -66,7 +66,7 @@ public class MessagingService {
 	 * 
 	 * @param clientRequest
 	 *            The request of the client that needs to be forwarded
-	 * @return 
+	 * @return
 	 * 
 	 * @return null
 	 */
@@ -161,7 +161,7 @@ public class MessagingService {
 				return false;
 			}
 		}
-		
+
 		return true;
 	}
 }

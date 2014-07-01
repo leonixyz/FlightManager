@@ -12,8 +12,9 @@ import common.ServerResponse;
 
 /**
  * The window of the client.
+ * 
  * @author user
- *
+ * 
  */
 public class Window extends JFrame {
 

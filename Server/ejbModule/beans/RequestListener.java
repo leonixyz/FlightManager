@@ -24,8 +24,8 @@ import fipu.FlightStatsFIPU;
 /**
  * This is the Java Bean responsible to listen on a JMS queue for client
  * incoming requests and dispatch them to the correct flight information
- * providing unit (FIPU), and once the response is back it is sent back
- * to the right client.
+ * providing unit (FIPU), and once the response is back it is sent back to the
+ * right client.
  * 
  * @author user
  * 

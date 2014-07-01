@@ -43,6 +43,7 @@ public class MainPanel extends JPanel {
 	private Window parentWindow;
 	private JXDatePicker datePicker;
 	private JComboBox departureComboBox, arrivalComboBox;
+	private int selectedWebService = 0;
 
 	/**
 	 * Builds the main panel of the client window
@@ -78,7 +79,7 @@ public class MainPanel extends JPanel {
 		JPanel departurePanel = new JPanel();
 		departurePanel.setLayout(new FlowLayout(FlowLayout.RIGHT));
 		departurePanel.add(new JLabel("Departure airport"));
-		Object[] airportList = AirportListElement.AIRPORTS.keySet().toArray();
+		Object[] airportList = AirportListElements.AIRPORTS.keySet().toArray();
 		departureComboBox = new JComboBox(airportList);
 		AutoCompleteDecorator.decorate(departureComboBox);
 		departureComboBox.setSelectedItem(null);
@@ -122,10 +123,10 @@ public class MainPanel extends JPanel {
 		// section for starting commands from the gui
 		JPanel menuPanel = new JPanel();
 		JRadioButton flightLookupOption = new JRadioButton("FlightLookup.com");
-		flightLookupOption.setActionCommand("flightlookup");
+		this.setSelectedWebService("flightlookup.com");
 		flightLookupOption.setSelected(true);
 		JRadioButton flightStatsOption = new JRadioButton("FlightStats.com");
-		flightStatsOption.setActionCommand("flightstats");
+		this.setSelectedWebService("flightstats.com");
 		ButtonGroup desiredWebservice = new ButtonGroup();
 		desiredWebservice.add(flightLookupOption);
 		desiredWebservice.add(flightStatsOption);
@@ -184,8 +185,36 @@ public class MainPanel extends JPanel {
 		scrollPane.getViewport().add(contentDisplayer);
 		queryPanel.add(scrollPane);
 		this.tabbedPane.addTab(response.getTitle(), queryPanel);
-		this.tabbedPane.setSelectedIndex(1);
+		this.tabbedPane.setSelectedIndex(this.tabbedPane.getTabCount() - 1);
 		contentDisplayer.setCaretPosition(0);
+	}
+
+	/**
+	 * Setter for selectedWebService
+	 * 
+	 * @param webservice
+	 *            Name of the web service to use. The only supported values are
+	 *            actually "flightlookup.com" and "flightstats.com"
+	 */
+	private void setSelectedWebService(String webservice) {
+		switch (webservice) {
+		case "flightlookup.com":
+			this.selectedWebService = ClientRequest.FLIGHT_LOOKUP;
+			break;
+		case "flightstats.com":
+			this.selectedWebService = ClientRequest.FLIGHT_STATS;
+			break;
+		}
+	}
+
+	/**
+	 * getter for selectedWebService
+	 * 
+	 * @return The selected web service. 0 for flightlookup.com, 1 for
+	 *         flightstats.com
+	 */
+	private int getSelectedWebService() {
+		return this.selectedWebService;
 	}
 
 	/**
@@ -201,21 +230,13 @@ public class MainPanel extends JPanel {
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			// selecting the webservice
-			int webservice = 0;
-			switch (e.getActionCommand()) {
-			case "flightlookup":
-				webservice = ClientRequest.FLIGHT_LOOKUP;
-				break;
-			case "":
-				webservice = ClientRequest.FLIGHT_STATS;
-				break;
-			}
+			int webservice = getSelectedWebService();
 
 			// building the request
 
-			String departureCode = AirportListElement.AIRPORTS
+			String departureCode = AirportListElements.AIRPORTS
 					.get(departureComboBox.getSelectedItem());
-			String arrivalCode = AirportListElement.AIRPORTS
+			String arrivalCode = AirportListElements.AIRPORTS
 					.get(arrivalComboBox.getSelectedItem());
 
 			ClientRequest request = new ClientRequest(departureCode,

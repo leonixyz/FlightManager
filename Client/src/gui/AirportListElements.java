@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -22,13 +23,14 @@ import org.xml.sax.SAXException;
  * @author user
  * 
  */
-public class AirportListElement {
+public class AirportListElements {
 
 	// hash map containing pairs "airport-name" / "IATA-code"
-	public static final Map<String, String> AIRPORTS;
+	public static final TreeMap<String, String> AIRPORTS;
 	// initialization of the hash map
 	static {
-		AIRPORTS = new HashMap<String, String>();
+		AIRPORTS = new TreeMap<String, String>();
+		Map<String, String> tmpAirports = new HashMap<String, String>();
 		// load the xml and parse it
 		File xml = new File("resources/airport-codes.xml");
 		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
@@ -53,12 +55,13 @@ public class AirportListElement {
 				Node currentAirportNode = airports.item(i);
 				if (currentAirportNode.getNodeType() == Node.ELEMENT_NODE) {
 					Element currentAirport = (Element) currentAirportNode;
-					AIRPORTS.put(currentAirport.getElementsByTagName("airport")
+					tmpAirports.put(currentAirport.getElementsByTagName("airport")
 							.item(0).getTextContent(), currentAirport
 							.getElementsByTagName("code").item(0)
 							.getTextContent());
 				}
 			}
 		}
+		AIRPORTS.putAll(tmpAirports);
 	}
 }

@@ -37,9 +37,9 @@ public class FlightLookupFIPU extends FIPU {
 	 * Sends a request to flightlookup.com and returns a response to the caller.
 	 * 
 	 * @param fromCode
-	 *            Airport code
+	 *            Departure IATA airport code
 	 * @param toCode
-	 *            Arrival airport Code
+	 *            Arrival IATA airport Code
 	 * @param date
 	 *            When?
 	 * 
