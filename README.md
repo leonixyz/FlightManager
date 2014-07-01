@@ -7,7 +7,7 @@ FlightManager
 - setup JBoss
 - clone the project
 - open the two subfolders as eclipse projects
-- run the Server using JBoss
+- run the Server using JBoss (using the provided XML file)
 - run the client
 - enjoy!
 
