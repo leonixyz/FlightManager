@@ -118,7 +118,7 @@ public class FlightStatsFIPU extends FIPU {
 	 *            Part of date of departure
 	 * @param day
 	 *            Part of date of departure
-	 * @return
+	 * @return The response as JSON
 	 */
 	private JSONObject getJSONResponse(String fromCode, String toCode,
 			String year, String month, String day) {

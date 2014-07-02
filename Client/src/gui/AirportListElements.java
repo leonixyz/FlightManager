@@ -55,10 +55,11 @@ public class AirportListElements {
 				Node currentAirportNode = airports.item(i);
 				if (currentAirportNode.getNodeType() == Node.ELEMENT_NODE) {
 					Element currentAirport = (Element) currentAirportNode;
-					tmpAirports.put(currentAirport.getElementsByTagName("airport")
-							.item(0).getTextContent(), currentAirport
-							.getElementsByTagName("code").item(0)
-							.getTextContent());
+					tmpAirports.put(
+							currentAirport.getElementsByTagName("airport")
+									.item(0).getTextContent(), currentAirport
+									.getElementsByTagName("code").item(0)
+									.getTextContent());
 				}
 			}
 		}

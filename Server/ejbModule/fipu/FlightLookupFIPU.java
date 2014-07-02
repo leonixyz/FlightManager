@@ -19,7 +19,6 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import beans.RequestListener;
-
 import common.ServerResponse;
 
 /**
@@ -47,7 +46,6 @@ public class FlightLookupFIPU extends FIPU {
 	 */
 	public ServerResponse requestResponse(String fromCode, String toCode,
 			Date date) {
-		StringBuilder s = new StringBuilder();
 		// manage date to end up with three values MM DD YY
 		Calendar cal = Calendar.getInstance();
 		cal.setTime(date);
@@ -55,41 +53,8 @@ public class FlightLookupFIPU extends FIPU {
 		String month = String.format("%02d", cal.get(Calendar.MONTH) + 1);
 		String year = String.format("%02d", cal.get(Calendar.YEAR) - 2000);
 
-		URL url = null;
-		Document doc;
-
-		// send the request and parse it
-		try {
-			url = new URL(
-					"http://api.flightlookup.com/otajtimetable/v1/TimeTable/?From="
-							+ fromCode + "&To=" + toCode + "&Date=" + month
-							+ "%2F" + day + "%2F" + year + "&key="
-							+ DEVELOPER_KEY);
-			URLConnection connection = url.openConnection();
-			InputStream stream = connection.getInputStream();
-			DocumentBuilderFactory objDocumentBuilderFactory = DocumentBuilderFactory
-					.newInstance();
-			DocumentBuilder objDocumentBuilder = objDocumentBuilderFactory
-					.newDocumentBuilder();
-			doc = objDocumentBuilder.parse(stream);
-		} catch (MalformedURLException e) {
-			RequestListener
-					.logError("[FlightLookupFIPU] There is an error in the URL for sending the request to FlightLookup.com");
-			return null;
-		} catch (IOException e) {
-			RequestListener
-					.logError("[FlightLookupFIPU] Couldn open a connection to the url "
-							+ url.toString());
-			return null;
-		} catch (ParserConfigurationException e) {
-			RequestListener
-					.logError("[FlightLookupFIPU] DocumentBuilder cannot be created satisfying the configuration requested.");
-			return null;
-		} catch (SAXException e) {
-			RequestListener
-					.logError("[FlightLookupFIPU] A parse error occurred while processing the response.");
-			return null;
-		}
+		// send the request and get the response back
+		Document doc = this.getResponse(fromCode, toCode, year, month, day);
 
 		// optional, but recommended
 		// read this -
@@ -106,7 +71,21 @@ public class FlightLookupFIPU extends FIPU {
 			return null;
 		}
 
-		// parse the document to produce only useful data
+		// parse the document and send a response back
+		return new ServerResponse("FlightLookup.com",
+				this.parseDocument(flights));
+	}
+
+	/**
+	 * Extract from the parsed document only useful data
+	 * 
+	 * @param flights
+	 *            The parsed document
+	 * @return The string representation of the flights
+	 */
+	private String parseDocument(NodeList flights) {
+		StringBuilder s = new StringBuilder();
+
 		for (int i = 0; i < flights.getLength(); i++) {
 
 			// for each node consisting in the flight solution...
@@ -192,7 +171,61 @@ public class FlightLookupFIPU extends FIPU {
 			}
 		}
 
-		return new ServerResponse("FlightLookup.com", s.toString());
+		return s.toString();
+	}
+
+	/**
+	 * Return a response from flightlookup.com wrapped into an XML document.
+	 * 
+	 * @param fromCode
+	 *            Departure IATA airport code
+	 * @param toCode
+	 *            Arrival IATA airport Code
+	 * @param year
+	 *            Part of departure date
+	 * @param month
+	 *            Part of departure date
+	 * @param day
+	 *            Part of departure date
+	 * @return The response as XML document
+	 */
+	private Document getResponse(String fromCode, String toCode, String year,
+			String month, String day) {
+		URL url = null;
+		Document doc = null;
+		try {
+			url = new URL(
+					"http://api.flightlookup.com/otajtimetable/v1/TimeTable/?From="
+							+ fromCode + "&To=" + toCode + "&Date=" + month
+							+ "%2F" + day + "%2F" + year + "&key="
+							+ DEVELOPER_KEY);
+			URLConnection connection = url.openConnection();
+			InputStream stream = connection.getInputStream();
+			DocumentBuilderFactory objDocumentBuilderFactory = DocumentBuilderFactory
+					.newInstance();
+			DocumentBuilder objDocumentBuilder = objDocumentBuilderFactory
+					.newDocumentBuilder();
+			doc = objDocumentBuilder.parse(stream);
+		} catch (MalformedURLException e) {
+			RequestListener
+					.logError("[FlightLookupFIPU] There is an error in the URL for sending the request to FlightLookup.com");
+			return null;
+		} catch (IOException e) {
+			RequestListener
+					.logError("[FlightLookupFIPU] Couldn open a connection to the url "
+							+ url.toString());
+			return null;
+		} catch (ParserConfigurationException e) {
+			RequestListener
+					.logError("[FlightLookupFIPU] DocumentBuilder cannot be created satisfying the configuration requested.");
+			return null;
+		} catch (SAXException e) {
+			RequestListener
+					.logError("[FlightLookupFIPU] A parse error occurred while processing the response.");
+			return null;
+		}
+
+		return doc;
 	}
 
 }

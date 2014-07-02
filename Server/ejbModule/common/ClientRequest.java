@@ -33,8 +33,6 @@ public class ClientRequest implements Serializable {
 	 *            When
 	 * @param desiredWebservice
 	 *            Which service to use as API
-	 * 
-	 * @return ClientRequest
 	 */
 	public ClientRequest(String departure, String arrival, Date date,
 			int desiredWebservice) {

@@ -23,8 +23,6 @@ public class Window extends JFrame {
 
 	/**
 	 * Create a client window and starts all necessary services
-	 * 
-	 * @return Window
 	 */
 	public Window() {
 		super();
@@ -62,8 +60,8 @@ public class Window extends JFrame {
 	/**
 	 * Pops up an error message
 	 * 
-	 * @param response
-	 *            The response to be forwarded
+	 * @param error
+	 *            A string containing an error message to display
 	 */
 	public static void sendError(String error) {
 		JOptionPane.showMessageDialog(null, error);

@@ -24,8 +24,6 @@ public class ServerResponse implements Serializable {
 	 *            The title of the response
 	 * @param content
 	 *            The content of the response
-	 * 
-	 * @return ServerResponse
 	 */
 	public ServerResponse(String title, String content) {
 		this.setTitle(title);
