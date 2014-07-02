@@ -1,22 +1,13 @@
 FlightManager
 =============
 
-
-## How to run it
-
-- setup JBoss
-- clone the project
-- open the two subfolders as eclipse projects
-- run the Server using JBoss (using the provided XML file)
-- run the client
-- enjoy!
-
-
 ## What is it?
 
 Project for the course of Distributed Systems and Internet Technologies
 
 The followings is the requirements document provided by the teaching assistant.
+
+The end-user documentation for the project in into /doc
 
 
 Project II
