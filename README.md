@@ -1,13 +1,16 @@
 FlightManager
 =============
+## Documentation
+The end-user documentation for the project in into the "/doc" folder
+
 
 ## What is it?
 
 Project for the course of Distributed Systems and Internet Technologies
-
 The followings is the requirements document provided by the teaching assistant.
 
-The end-user documentation for the project in into /doc
+
+
 
 
 Project II
