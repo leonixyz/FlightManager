@@ -41,10 +41,10 @@ Hence the CFE can receive information from more than one source (FIPUs) with dif
 
 This SOAP web service provides methods for registration/deregistration of the user-email for receiving an email-alert for a specific flight arriving at an airport on the given day.
 Both web methods are called by the CFE via its GUI.
-E.g. registerArrivalAlarm("31-AUG-2014", "<carrier>", "<flightNumber>", "werner.wild@unibz.it")
+E.g. registerArrivalAlarm("31-AUG-2014", "<carrier>", "<flightNumber>", "someone@unibz.it")
 
 Alternatively (and probably more useful!), the service could provide an email-alert when the price for a flight drops below a certain threshold.
-E.g. registerPriceAlarm("31-AUG-2014", "MUC-SFO", "750.00", "werner.wild@unibz.it")
+E.g. registerPriceAlarm("31-AUG-2014", "MUC-SFO", "750.00", "someone@unibz.it")
 
 Technologies to be used
 CFE: GUI developed in Java (using Swing) and the Eclipse environment.
